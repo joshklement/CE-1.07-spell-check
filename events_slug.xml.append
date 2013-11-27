@@ -61,7 +61,7 @@
 <textList name="SLUG_FIGHT_DESTROYED">  
 	<text>The gelatinous hull plating of the attacking Slug ship wobbles a little before being sent flying in many directions by their destruction.</text>
 	<text>These sly Slugs receive their just dessert, in the form of weapons fire pulverising their ship into scrap.</text>
-	<text>These telepathic beings did not foresee this, their impressive arsenal failed to repel yours, their destruction the inevitable result.</text>
+	<text>These telepathic beings did not foresee this; their impressive arsenal failed to repel yours, their destruction the inevitable result.</text>
 	<text>Your wits manage to outdo these sneaky Slugs, their ship exploding into a mess of purple armor plating and scrap materials.</text>
 	<text>The days of this particular group of gastropods are numbered, their fate sealed with the destruction of their prized ship.</text>
 </textList>
@@ -190,7 +190,7 @@
 <textList name="START_BEACON_SLUG">
 	<text>The only thing that can render a nebula more dangerous is if it's also home to the Slugs. This particular nebula is just that.</text>
 	<text>This nebula is home to the telepathic Slugs. They'd sell their own slime for a crate of scrap, but they much prefer to just take it.</text>
-	<text>You're told the Slug home world is somewhere in this nebula. You can't see them, but you know they're watching.</text>
+	<text>You're told a Slug home world is somewhere in this nebula. You can't see them, but you know they're watching.</text>
 	<text>The Slugs that live in this nebula field are a leisure-centered civilization. Everything in Slug life is done in the pursuit of more currency and more time in which to spend it on extravagant ventures. This, inevitably, leads to much treachery in open space.</text>
 	<text>The Slugs developed on an ocean planet where the ability to telepathically sense another organism was more important than sight. Today they use this ability to navigate unfettered the depths of the nebulas they inhabit.</text>
 </textList>
@@ -261,7 +261,7 @@
 </textList>
 
 <event name="SLUG_FIGHT" unique="true">
-	<text>It's rare for the Slugs to stay exposed in open space for long periods - the ship here may be lost, or just passing through, but either way he moves in to attack!</text>
+	<text>It's rare for the Slugs to stay exposed in open space for long periods - the ship here may be lost, or just passing through, but either way it moves in to attack!</text>
 	<ship load="JELLY" hostile="true"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
@@ -1472,7 +1472,7 @@
 </eventList>
 <eventList name="SLUG_DISTRESS_ROCK_AVOID">
 	<event>
-		<text>You have no desire to provoke Slugs in their own territory. You leave them alone.</text>
+		<text>You have no desire to provoke the Slugs in their own territory. You leave them alone.</text>
 	</event>
 	<event>
 		<text>You have no desire to provoke the Slugs in their own territory. You leave them alone.</text>
@@ -2044,7 +2044,7 @@
 	<choice hidden="true">
 		<text>Refuse.</text>
 		<event>
-			<text>The Slug feigns offense at your refusal, but you sense that he respects your caution. This does not, however, prevent him from returning to his ship and opening fire.</text>
+			<text>The Slug feigns offence at your refusal, but you sense that he respects your caution. This does not, however, prevent him from returning to his ship and begin an assault.</text>
 			<ship hostile="true"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
@@ -2106,12 +2106,12 @@
 
 <eventList name="SLUG_DRINK_ROCK">
 	<event>
-		<text>Even if there was something malicious in the drink, you doubt it would affect the Rock digestive system. The Slug casually celebrates your newfound trust by repairing part of your ship and offering to sell you his wares.</text>
+		<text>Even if there was something malicious in the drink, you doubt it would affect the Rock digestive system. The Slug casually celebrates your new-found trust by repairing part of your ship and offering to sell you his wares.</text>
 		<damage amount="-10"/>
 		<store/>
 	</event>
 	<event>
-		<text>Your crewmember is able to identify a heavy anaesthetic contained in the flask when he feels slightly drowsy (the Rock digestion system is very robust). His ruse discovered, the Slug immediately returns to his ship and opens fire.</text>
+		<text>Your crew member is able to identify a heavy anaesthetic contained in the flask when he feels slightly drowsy (the Rock digestion system is very robust). His ruse discovered, the Slug immediately returns to his ship and open fires.</text>
 		<ship hostile="true"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
@@ -2421,7 +2421,7 @@
 	<choice hidden="true">
 		<text>Never!</text>
 		<event>
-			<text>The Slug is unimpressed by your bravado and moves in to attack. Get the shields up, you're a sitting duck with malfunctioning thrusters!</text>
+			<text>The Slug is unimpressed by your bravado and moves in to attack. Get the shields up - you're a sitting duck with malfunctioning thrusters!</text>
 			<ship hostile="true"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
@@ -3147,10 +3147,10 @@
 	</choice>
 </event>
 <textList name="BS_EVENT_SLUG_BLACKMARKET_TEXT">
-	<text>You find a busy Slug trade-station hidden in this part of the nebula. They agree to let you dock and offer some services</text>
+	<text>You find a busy Slug trade-station hidden in this part of the nebula. They agree to let you dock and offer some services.</text>
 	<text>A Slug station hails you shortly after you arrive: "Come travelerss, see our waress!"</text>
 	<text>As you jump in the crew already expects another Slug hacker trying to set your ship on fire. You are glad to just find a slimy Slug trade-post instead. They even offer their services to you. </text>
-	<text>This area of the nebula seems devoid of live, but as your charge your FTL a Slug station suddenly decloaks a few clicks behind you. They hail and explain that they are a trade-post open for buisness.</text>
+	<text>This area of the nebula seems devoid of live, but as your charge your FTL a Slug station suddenly decloaks a few clicks behind you. They hail and explain that they are a trade-post open for business.</text>
 </textList>
 <eventList name="BS_EVENT_SLUG_BLACKMARKET_NEBULA_TRADE">
 	<event>
@@ -3161,7 +3161,7 @@
 		<weapon name="RANDOM"/>
 	</event>
 	<event>
-		<text>Your write a scrap transfer order and the Slug agrees to send the weapon to your ship. As it does not arrive after quite a time your go back to the shop, only to find it empty. Inquiry for the owner only results in frustration: Every Slugs you ask denies that this shop is actually in business. Seems you got ripped off.</text>
+		<text>Your write a scrap transfer order and the Slug agrees to bring the weapon to your ship. When he does not arrive after quite some time you go back to the shop, only to find it empty. Inquiring for the owner only results in frustration: Every Slug you ask denies that this shop is actually in business. You got ripped off!</text>
 		<item_modify>
 			<item type="scrap" min="-50" max="-50"/>
 		</item_modify>
@@ -3222,7 +3222,7 @@
 			</event>
 		</choice>
 		<choice>
-			<text>Learn to better not deal with slugs unprepared and move on.</text>
+			<text> You've learned it's better not to deal with slugs unprepared, and move on.</text>
 			<event/>
 		</choice>
 	</event>
@@ -3236,7 +3236,7 @@
 		<damage amount="-10"/>				
 	</event>
 	<event>
-		<text>You transfer scrap and the engineer sends out a drone that starts to replace damaged hull-parts on your ship. Strangely it leaves again after having only repaired some minor damage. The station then detaches your ship from the docking bay and does not even answer your hails. Seems the customer isn't exactly king here.</text>
+		<text>You transfer the scrap and the engineer sends out a drone that starts to replace damaged hull-parts on your ship. Strangely it leaves again after having only repaired some minor damage. The station then detaches your ship from the docking bay and does not answer your hails. Seems the customer isn't exactly king here.</text>
 		<item_modify>
 			<item type="scrap" min="-30" max="-30"/>
 		</item_modify>
@@ -3298,7 +3298,7 @@
 			</event>
 		</choice>
 		<choice hidden="true">
-			<text>Learn to better not deal with slugs unprepared and move on.</text>
+			<text>You've learned it's better not to deal with slugs unprepared and move on.</text>
 			<event/>
 		</choice>
 	</event>
@@ -3306,7 +3306,7 @@
 
 
 <event name="BS_EVENT_SLUG_HACK_NEBULA" unique="true">
-	<text>You are hailed by a well armed Slug station. "Coming here was a missstake. Nothing personal but we will scrap your ship for our own profit. We have a very neoliberal econnomy here you know?"</text>
+	<text>You are hailed by a well armed Slug station. "Coming here was a missstake. Nothing personal but we will scrap your ship for our own profit. We have a very neoliberal economy here you know?"</text>
 	<environment type="nebula"/>
 	<choice hidden="true">
 		<text>Get in an attack vector.</text>
@@ -3315,7 +3315,7 @@
 	<choice hidden="true">
 		<text>Offer 35 scrap to buy yourself out of this.</text>
 		<event>
-			<text>"Hm... well thisss might jussst ssufice." They take the scrap and your hurry to leave.</text>
+			<text>"Hm... well thisss might jussst ssufice." They take the scrap and you hurry to leave.</text>
 			<item_modify>
 				<item type="scrap" min="-35" max="-35"/>
 			</item_modify>
@@ -3328,7 +3328,7 @@
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text>Your ship computer registers a cyber attack directed at the weapon targeting systems. The stations weapon clusters locks on your ship!</text>
+				<text>Your ship computer registers a cyber attack directed at the weapon targeting systems. The station's weapon clusters lock on your ship!</text>
 				<status type="divide" target="player" system="weapons" amount="2"/>
 				<ship load="BS_JELLY_STATUS_WEAPONS" hostile="true"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
@@ -3386,7 +3386,7 @@
 		<choice hidden="true" req="WEAPONS_EFFECTOR">
 			<text>(Effector) Use the effector to counter their hacking attempts.</text> 
 			<event>
-				<text>Your effector manages to eliminate the stations override routines that have been introduced into your systems. Time to mob them up!</text>
+				<text>Your effector manages to eliminate the station's override routines that have been introduced into your system. Time to pay them back!</text>
 				<ship load="BS_SLUG" hostile="true"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
@@ -3446,7 +3446,7 @@
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text>Warning lights flicker all over your ship airlocks as your door systems are sabotaged by the stations hacking modules.</text>
+				<text>Warning lights flicker all over your ship's airlocks as your door system is sabotaged by the station's hacking modules.</text>
 				<status type="divide" target="player" system="oxygen" amount="2"/>
 				<status type="limit" target="player" system="doors" amount="0"/>
 				<ship load="BS_JELLY_STATUS_OXIGEN_DOORS" hostile="true"/>
@@ -3505,7 +3505,7 @@
 		<choice hidden="true" req="WEAPONS_EFFECTOR">
 			<text>(Effector) Use the effector to counter their hacking attempts.</text> 
 			<event>
-				<text>Your effector manages to eliminate the stations override routines that have been introduced into your systems. Time to mob them up!</text>
+				<text>Your effector manages to eliminate the station's override routines that have been introduced into your systems. Time to pay them back!</text>
 				<ship load="BS_SLUG" hostile="true"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
@@ -3561,11 +3561,11 @@
 		</choice>
 	</event>
 	<event>
-		<text>"Alright, hope you don't feel to defenssseless without your sshields." A effector hidden inside the station targets your shield system.</text>
+		<text>"Alright, hope you don't feel too defenssseless without your sshields." A effector hidden inside the station targets your shield system.</text>
 		<choice hidden="true">
 		<text>Continue...</text>
 			<event>
-				<text>You engage the station and prepare for the worse.</text>
+				<text>You engage the station and prepare for the worst.</text>
 				<status type="divide" target="player" system="shields" amount="2"/>
 				<status type="limit" target="player" system="medbay" amount="0"/>
 				<ship load="BS_JELLY_STATUS_SHIELDS_MEDBAY" hostile="true"/>
@@ -3624,7 +3624,7 @@
 		<choice hidden="true" req="WEAPONS_EFFECTOR">
 			<text>(Effector) Use the effector to counter their hacking attempts.</text> 
 			<event>
-				<text>Your effector manages to eliminate the stations override routines that have been introduced into your systems. Time to mob them up!</text>
+				<text>Your effector manages to eliminate the station's override routines that have been introduced into your systems. Time to pay them back!</text>
 				<ship load="BS_SLUG" hostile="true"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
@@ -3680,11 +3680,11 @@
 		</choice>
 	</event>
 	<event>
-		<text>"We will ssstart by immobilizing you." Your ships engines are targeted by an electronic-warfare device and start to fail. Even worse you partly loose control helm as well.</text>
+		<text>"We will ssstart by immobilizing you." Your ships engines are targeted by an electronic-warfare device and begin to fail. Even worse, you've lost partial control helm as well!</text>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text>You hope your shields will be able to take the enemy fire and move to engage.</text>
+				<text>You hope your shields will be able to take the enemy fire and move in to engage.</text>
 				<ship load="BS_JELLY_STATUS_ENGINES_PILOT" hostile="true"/>
 				<status type="divide" target="player" system="engines" amount="2"/>
 				<status type="divide" target="player" system="pilot" amount="2"/>
@@ -3743,7 +3743,7 @@
 		<choice hidden="true" req="WEAPONS_EFFECTOR">
 			<text>(Effector) Use the effector to counter their hacking attempts.</text> 
 			<event>
-				<text>Your effector manages to eliminate the stations override routines that have been introduced into your systems. Time to mob them up!</text>
+				<text>Your effector manages to eliminate the station's override routines that have been introduced into your systems. Time to pay them back!</text>
 				<ship load="BS_SLUG" hostile="true"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
@@ -4062,8 +4062,8 @@
 
 
 <textList name="STORE_SLUG_BUY_TEXT">
-	<text>The Slugs can read minds, so they should know what you want, right? They definitely aren't that cooperative. While they slowly load the cargo you have a look at the ship equipment the shop also also offers.</text>
-	<text>You take extra care when transferring the scrap and have you crew stand by for security. Dealing with Slugs is never easy for non-telepaths. Loading the cargo takes some time. You check the ship equipment catalog while waiting.</text>
+	<text>The Slugs can read minds, so they should know what you want, right? They definitely aren't that cooperative. While they slowly load the cargo you have a look at the ship equipment the shop also offers.</text>
+	<text>You take extra care when transferring the scrap and have your crew stand by for security. Dealing with Slugs is never easy for non-telepaths. Loading the cargo takes some time. You check the ship equipment catalogue while waiting.</text>
 	<text>The Slug invites you for a drink to celebrate the deal and the ship computer says the stuff is not dangerous. It still is quite strong though. You can't command a ship like that. While waiting for your head to clear you check the ship equipment they offer here.</text>
 	<text>To seal the deal you are invited for some slug stuff. The scanner says its OK but you get quite sick from it. Why can trading never be easy?</text>
 </textList>
