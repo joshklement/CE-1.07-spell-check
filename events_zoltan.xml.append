@@ -68,9 +68,9 @@
 <textList name="ZOLTAN_FIGHT_DESTROYED">  
 	<text>The strange Zoltan ship comes apart, the pieces of hull twisting out of shape from the force of the explosion.</text>
 	<text>The almost transcendent Zoltan crew become one with the universe, their craft breaking into pieces, scattering their bodies into space.</text>
-	<text>After breaking though their tough energetic cocoon, the Zoltan ship takes sufficient damage from your weapons to explode, leaving behind many useful scrap materials.</text>
+	<text>After breaking though their tough, energetic cocoon, the Zoltan ship takes sufficient damage from your weapons to explode, leaving behind many useful scrap materials.</text>
 	<text>With their energy shield lowered, the Zoltan ship quickly succumbs to your weapons fire and breaks apart, leaving you to collect their remains.</text>
-	<text>Your attacks eventually punch through the tough defenses of the Zoltan vessel, blowing them up with one final strike to their hull.</text>
+	<text>Your attacks eventually punch through the tough defences of the Zoltan vessel, blowing them up with one final strike to their hull.</text>
 </textList>
 
 <!-- CE modified Vanilla Zolatan Events -->
@@ -135,14 +135,14 @@
 </textList>
 <eventList name="CE_ZOLTAN_MINEFIELD_LIST">
 	<event>
-		<text>You ignore the hails and threads of the local Zoltan as you lay a small minefield around the beacon. The Rebel forces will have to avoid this area, clear the minefield or suffer heavy damage. All possibilities will considerably delay their fleet.</text>
+		<text>You ignore the hails and threats of the Zoltan locals as you lay a small minefield around the beacon. The Rebel forces will have to avoid this area, clear the minefield or suffer heavy damage. All possibilities will considerably delay their fleet.</text>
 		<item_modify>
 			<item type="missiles" min="-4" max="-4"/>
 		</item_modify>
 		<modifyPursuit amount="-1"/>
 	</event>
 	<event>
-		<text>Just after you lay the first mine a Zoltan military ship jumps in. They hail: "By deploying military grade proximity explosives in Zoltan space, you are in violation of the Interstelar Space-Mine Ban Treaty. Your weaponry will be confiscated and you will be brought to trial." You don't have time for this.</text>
+		<text>Just after you lay the first mine a Zoltan military ship jumps in. They hail: "By deploying military grade proximity explosives in Zoltan space, you are in violation of the Interstellar Space-Mine Ban Treaty. Your weaponry will be confiscated and you will be brought to trial." You don't have time for this.</text>
 		<item_modify>
 			<item type="missiles" min="-1" max="-1"/>
 		</item_modify>
@@ -448,7 +448,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>You pose as traders and succeed in bypassing airlock security - however, it's only a matter of time before someone realizes your ID cards are counterfeit!</text>
+		<text>You pose as traders and succeed in bypassing airlock security - however, it's only a matter of time before someone realizes your ID cards are counterfeit.</text>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="ZOLTAN_TRADE_HUB_SUCCESS"/>
@@ -458,15 +458,15 @@
 
 
 <event name="ZOLTAN_QUEST_PRIMITIVES" unique="true">
-	<text>You arrive at the primitive planet that you heard about at the cantina and are surprised to see a Zoltan ship facing off against a Rebel assault craft.</text>
+	<text>You arrive at the primitive planet that you heard about at the Cantina and are surprised to see a Zoltan ship facing off against a Rebel assault craft.</text>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
-			<text> You tap into their frequency and hear the Rebel captain yelling, "We are liberating this planet in the name of the new Galactic government! These aliens will not be left in ignorance where they cannot be of use!"</text>
+			<text> You tap into their frequency and hear the Rebel captain yelling, "We are liberating this planet in the name of the new Galactic government! These aliens will not be left in ignorance when they could be of use!"</text>
 			<choice hidden="true">
 				<text>Interfere - make first contact with the primitive aliens.</text>
 				<event>
-					<text>The local people - furry, one-eyed tree lizard things - begin chanting when they see you. Suddenly the sky is lit by laser fire - the Zoltan opened fire on your ship! You dash back to the shuttle and join the fight.</text>
+					<text>The local people - furry, one-eyed tree lizard things - begin chanting when they see you. Suddenly the sky is lit by laser fire - the Zoltan open fired on your ship! You dash back to the shuttle and join the fight.</text>
 					<ship load="ZOLTAN_PRIMITIVES_ZOLTAN" hostile="true"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>Targeting Jammer) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
@@ -521,7 +521,7 @@
 				</event>
 			</choice>
 			<choice hidden="true">
-				<text>Protect the aliens' way of life - Attack the Rebel ship.</text>
+				<text>Protect the alien's way of life - Attack the Rebel ship.</text>
 				<event>
 					<text>These creatures should be left to develop at their own pace. You direct all weapons on the Rebel ship and begin the firing sequence.</text>
 					<ship load="ZOLTAN_PRIMITIVES_REBEL" hostile="true"/>
@@ -699,7 +699,7 @@
 
 
 <event name="ZOLTAN_MANTIS" unique="true">
-	<text>You pick up the last broadcast from a rupturing Zoltan freighter: "The Mantis, they're here, please-" You're interrupted by fire off the port bow!</text>
+	<text>You pick up the last broadcast from a rupturing Zoltan freighter: "The Mantis, they're here, ple-" You're interrupted by fire off the port bow!</text>
 	<ship load="MANTIS_FIGHT" hostile="true"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>Targeting Jammer) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
@@ -2435,13 +2435,13 @@
 </event>
 <textList name="C_EVENT_ZOLTAN_TRANSPORT_TEXT">
 	<text>You spot a civilian transport ship nearby. Passive scans indicate they are transporting locally produced goods.</text>
-	<text>An only lightly armed Zoltan transport ship jumps in shortly after you. They refuse all hails, so you just quietly recharge your FTL's besides each other.</text>
+	<text>A lightly armed Zoltan transport ship jumps in shortly after you. They refuse all hails, so you just quietly recharge your FTLs beside each other.</text>
 	<text>An Zoltan transport hails: "In according to the merchant security legislation act we officially request that you remain in safety distance and keep you weapon targeting off line." The refuse any further communication.</text>
 	<text>A civilian Zoltan ship recharges it's FTL at this beacon. They hail you: "Greetings captain. It's a long time since we saw a Federation ship here. We transport goods for the Zoltan peace synod. Where are you heading?" After a little chat they prepare to jump.</text>
-	<text>A Zoltan transport ship is performing maintenance at this beacon. They send a message: "Military vessel. We have no reason to think ill of you, but with the amount of pirates terrorizing our borders we expect you to keep your distance. In case of aggression we will make full use of our right to self defense according to GSL Paragraph 23412, Section VII, part D."</text>
+	<text>A Zoltan transport ship is performing maintenance at this beacon. They send a message: "Military vessel. We have no reason to think ill of you, but with the amount of pirates terrorizing our borders we expect you to keep your distance. In case of aggression we will make full use of our right to self defence according to GSL Paragraph 23412, Section VII, part D."</text>
 </textList>
 <textList name="C_ZOLTAN_SURRENDER_TEXT">
-	<text>The ship sends white flag codes. The Zolatan want to surrender.</text>
+	<text>The ship sends white flag codes. The Zoltan want to surrender.</text>
 	<text>They send surrender signals and hail: "We where only defending ourselves. Let us be reasonable. No more damage has to be caused. We agree to comply with any of your demands". They offer everything they have if you let them go.</text>
 	<text>The ship shows heavy damage. You receive a hail: "Stop shooting, we can't bear this violence. Take our goods and leave us."</text>
 	<text>"This disturbance of galactic harmony is unnecessary and has to end. Worldly possessions can never be as valuable as sentient lives, so we agree to give up our cargo." They offer to transfer a bounty.</text>
@@ -2494,7 +2494,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>hey where carrying spare parts for FTL beacons and agree to give up their cargo. This makes you just another space pirate, but your don't even have these fancy markings.</text>
+		<text>They where carrying spare parts for FTL beacons and agree to give up their cargo. This makes you just another space pirate, but your don't even have these fancy markings.</text>
 		<ship hostile="false"/>
 		<augment name="TE_GOODS_ZOLTAN_BEACONS"/>
 		<choice>
@@ -2512,7 +2512,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>They where carrying valuable shield system parts and agree to give up their cargo. This makes you just another space pirate, but your don't even have these fancy markings.</text>
+		<text>They where carrying valuable shield system parts and agree to give up their cargo. This makes you just another space pirate, but your don't even have those fancy markings.</text>
 		<ship hostile="false"/>
 		<augment name="TE_GOODS_ZOLTAN_SHIELDS"/>
 		<choice>
@@ -2530,7 +2530,7 @@
 			<event load="DEAD_CREW_PIRACY_ZOLTAN_RESULTS"/>
 		</choice>
 		<choice req="ROCK_ARMOR" hidden="true"> 
-			<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew what they where signing on for a joyride here.</text>
+			<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew what they weren't signing on for a joyride here.</text>
 			<event load="DEAD_CREW_PIRACY_ZOLTAN_RESULTS_RISKLESS"/>
 		</choice>
 		<choice req="CREW_STIMS" hidden="true"> 
@@ -2554,7 +2554,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>Your crew accuses you of betraying everything the Federation stands for. A salvage team is send in to strip the ship of useful materials and report on its cargo.</text>
+		<text>Your crew accuses you of betraying everything the Federation stands for. A salvage team is sent in to strip the ship of useful materials and report on its cargo.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -2571,11 +2571,11 @@
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
 	<event>
-		<text>So many individuals died by your hand during your mission, so the death of this civilians doesn't't matter, right? The crew seems to think otherwise. You are able to take the fuel out of the ships storage. You also take all the scrap you can manage.</text>
+		<text>So many individuals died by your hand during your mission, so the death of this civilians doesn't matter, right? The crew seems to think otherwise. You are able to take the fuel out of the ship's storage. You also take all the scrap you can manage.</text>
 		<autoReward level="HIGH">fuel</autoReward>
 	</event>
 	<event>
-		<text>You keep telling yourself this was necessary for the mission, but can't help to feel guilty. The looks your crew gives you don't help either. You are able to take the fuel out of the ships storage. You also take all the scrap you can manage and request a report on the ships cargo.</text>
+		<text>You keep telling yourself this was necessary for the mission, but can't help to feel guilty. The looks your crew gives you don't help either. You are able to take the fuel out of the ship's storage. You also take all the scrap you can manage and request a report on the ships cargo.</text>
 		<autoReward level="LOW">fuel</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -2588,7 +2588,7 @@
 		<autoReward level="MED">scrap_only</autoReward>
 	</event>
 	<event>
-		<text>Your crew much more silent during the salvage operation than usual, no one talks to you anymore unless given orders. They find a weapon system on their ship. With all the civilians slaughtered, you can take it for your ship.</text>
+		<text>Your crew much more silent during the salvage operation than usual, no one talks to you any more unless given orders. They find a weapon system on their ship. With all the civilians slaughtered, you can take it for your ship.</text>
 		<autoReward level="MED">weapon</autoReward>
 	</event>
 </eventList>
@@ -2603,7 +2603,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>Your crew has no problems with resorting to piracy. A salvage team is send in to strip the ship of useful materials and report on its cargo.</text>
+		<text>Your crew has no problems with resorting to piracy. A salvage team is sent in to strip the ship of useful materials and report on it's cargo.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -2615,11 +2615,11 @@
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
 	<event>
-		<text>Your crew agrees this was ugly, but necessary. You are able to take the fuel out of the ships storage. You also take all the scrap you can manage.</text>
+		<text>Your crew agrees this was ugly, but necessary. You are able to take the fuel out of the ship's storage. You also take all the scrap you can manage.</text>
 		<autoReward level="HIGH">fuel</autoReward>
 	</event>
 	<event>
-		<text>Your crew does not question your course of action. You are able to take the fuel out of the ships storage. You also take all the scrap you can manage and request a report on the ships cargo.</text>
+		<text>Your crew does not question your course of action. You are able to take the fuel out of the ship's storage. You also take all the scrap you can manage and request a report on the ships cargo.</text>
 		<autoReward level="LOW">fuel</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -2627,7 +2627,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>Your crew doesn't care more then you about this civilians. They throw bodies out of the airlock and later find a weapon system on their ship. With all the civilians slaughtered, you can take it for your ship.</text>
+		<text>Your crew doesn't care more then you about these civilians. They throw bodies out of the airlock and later find a weapon system on their ship. With all the civilians slaughtered, you can take it for your ship.</text>
 		<autoReward level="MED">weapon</autoReward>
 	</event>
 </eventList>
@@ -2641,7 +2641,7 @@
 			<event load="DESTROYED_PIRACY_ZOLTAN_RESULTS"/>
 		</choice>
 		<choice req="ROCK_ARMOR" hidden="true"> 
-			<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew what they where signing on for a joyride here.</text>
+			<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew what they weren't signing on for a joyride here.</text>
 			<event load="DESTROYED_PIRACY_ZOLTAN_RESULTS_RISKLESS"/>
 		</choice>
 		<choice req="CREW_STIMS" hidden="true"> 
@@ -2649,7 +2649,7 @@
 			<event load="DESTROYED_PIRACY_ZOLTAN_RESULTS_RISKLESS"/>
 		</choice>
 		<choice req="SLUG_GEL" hidden="true"> 
-			<text>(Slug Ship) You command a vessel of the sly and treacherous Slugs. You crew new this mission wouldn't go that clean.</text>
+			<text>(Slug Ship) You command a vessel of the sly and treacherous Slugs. Your crew knew this mission wouldn't go that clean.</text>
 			<event load="DESTROYED_PIRACY_ZOLTAN_RESULTS_RISKLESS"/>
 		</choice>
 	</event>
@@ -2658,7 +2658,7 @@
 
 <eventList name="DESTROYED_PIRACY_ZOLTAN_RESULTS_RISKLESS">
 	<event>
-		<text>Your crew got used to your hard style of leadership. Scans indicate some of the ships cargo is still intact. You order an investigation.</text>
+		<text>Your crew has become used to your hard style of leadership. Scans indicate some of the ship's cargo is still intact. You order an investigation.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -2666,7 +2666,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>Your hard boiled crew doesn't care much about lives lost. You send in a salvage team.</text>
+		<text>Your hard boiled crew doesn't care much about the lives lost. You send in a salvage team.</text>
 		<autoReward level="MED">standard</autoReward>
 	</event>
 	<event>
@@ -2681,7 +2681,7 @@
 
 <eventList name="DESTROYED_PIRACY_ZOLTAN_RESULTS">
 	<event>
-		<text>You will use the scrap for good, but can't help feeling like you lost your way. Crew moral is as low as it can get. Scans indicate some of the ships cargo is still intact. You order an investigation.</text>
+		<text>You will use the scrap for good, but can't help feeling like you lost your way. Crew moral is as low as it can get. Scans indicate some of the ship's cargo is still intact. You order an investigation.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -2738,7 +2738,7 @@
 		<augment name="TE_GOODS_ZOLTAN_BEACONS"/>
 	</event>
 	<event>
-		<text>The ships was carrying legal documents. This stuff could actually be worth something. The crew carefully secures the freight in the cargo holds.</text>
+		<text>The ships was carrying legal documents. This stuff could actually be worth something. The crew carefully secures the freight in your cargo hold.</text>
 		<augment name="TE_GOODS_ZOLTAN_CODEX"/>
 	</event>
 	<event>
@@ -2805,10 +2805,10 @@
 		</choice>
 </event>
 <textList name="BS_EVENT_ZOLTAN_TEXT">
-<text>A Zoltan station hails. "Is it day or the sleep? Thousands of cycles, always in movement. My mind transcends the worldly realm. I have seen it!" Seems they have been out her for to long. You consider someone could still reason with them but you are going have to dodge their fire for now.</text>
+<text>A Zoltan station hails. "Is it day or the sleep? Thousands of cycles, always in movement. My mind transcends the worldly realm. I have seen it!" Seems they have been out here for too long. You consider someone could still reason with them but you are going have to dodge their fire for now.</text>
 	<text>A Zoltan station with strange marking appears on the vidscreen. After little time they open fire, this must be some violent separatist sect.</text>
 	<text>You receive a hail from a small station: "With jumping here you invaded the domain of warrior-monk Sandra-Zen the Sublime. Deactivate your weapons and submit to our authority" The station doesn't seem that big. A fast crew vote results in the decision to fight.</text>
-	<text>A nearby Zoltan outpost is harassed by some pirate ships, which are about to retreat. The station must have mistaken you for reinforcements and starts targeting you. Unfortunately most Zoltan commanders can not be reasoned with.</text>
+	<text>A nearby Zoltan outpost is harassed by some pirate ships, which are about to retreat. The station must have mistaken you for reinforcements and starts targeting you. Unfortunately most Zoltan commanders cannot be reasoned with.</text>
 	<text>As you arrive at the beacon a Zoltan military outpost appears on the radar. They refuse all hails and instead start firing. You will have time to wonder why later.</text>
 </textList>
 
@@ -2824,7 +2824,7 @@
 	<choice req="ENERGY_SHIELD" hidden="true">
 		<text>(Zoltan Shield) Reconfigure the shield frequencies to scramble the enemy artillery targeting.</text>
 	<event>
-		<text>Your advanced shield technlogy prevents the hostile artillery weapons from locking on to your vessel. The spotter ship will get no support fire.</text>
+		<text>Your advanced shield technology prevents the hostile artillery weapons from locking on to your vessel. The spotter ship will get no support fire.</text>
 		<ship load="CE_SPOTTER_ZOLTAN_BEAM_SUPERSHIELD" hostile="true"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
@@ -2884,14 +2884,14 @@
 	</choice>
 </event>
 <textList name="CE_PDS_ZOLTAN_TEXT">
-	<text planet="NONE" back="BG_WARNING_TARGETING_CIV">You drop into real space near a Zoltan settled planet and receive a worrying message: "Our counsel has deducted that your arrival in our sector will bring only destruction. We ask you to leave and will empathizes our request with a defense ship and artillery beams. For deterrence only of course."</text>
-	<text planet="NONE" back="BG_WARNING_TARGETING_CIV">The small zoltan garrison on this planet hails you as soon as you arrive: "Federation vessel. Several incidents in this sector during the last cycles suggest you came here with ill intentions. We will prevent you from bringing your filthy violence to our world at all cost." Seems they plan to do this via artillery beams.</text>
-	<text planet="NONE" back="BG_WARNING_TARGETING_CIV">You arrive near another Zoltan planet and receive a automated hail: "This world has democratically decided to remain neutral in the current conflict. All arriving vessels, Rebel or Federation, will be deterred with equal force. We ask you politely to leave and send a ship against you to show that we mean it."</text>
+	<text planet="NONE" back="BG_WARNING_TARGETING_CIV">You drop into real space near a Zoltan settled planet and receive a worrying message: "Our counsel has deduced that your arrival in our sector will bring only destruction. We ask you to leave and will emphasize our request with a defence ship and artillery beams. For deterrence only of course."</text>
+	<text planet="NONE" back="BG_WARNING_TARGETING_CIV">The small Zoltan garrison on this planet hails you as soon as you arrive: "Federation vessel. Several incidents in this sector during the last cycles suggest you came here with ill intentions. We will prevent you from bringing your filthy violence to our world at all cost." Seems they plan to do this via artillery beams.</text>
+	<text planet="NONE" back="BG_WARNING_TARGETING_CIV">You arrive near another Zoltan planet and receive an automated hail: "This world has democratically decided to remain neutral in the current conflict. All arriving vessels, Rebel or Federation, will be deterred with equal force. We ask you politely to leave and send a ship against you to show that we mean it."</text>
 </textList>
 
 <eventList name="CE_PDS_ZOLTAN_LIST">
 	<event>
-		<text>A heavyly shielded Zoltan defender burst through the athmosphere of the planet and short jumps to you ship. Seems this Zoltan realy mean it.</text>
+		<text>A heavily shielded Zoltan defender burst through the atmosphere of the planet and short jumps to you ship. Seems this Zoltan really mean it.</text>
 		<ship load="CE_SPOTTER_ZOLTAN_BEAM" hostile="true"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
@@ -2968,7 +2968,7 @@
 	<text>A human ship hails: "My friends! Please, there is nothing I don't have, and there is nothing worth wanting that I can't get. Why not take a look around my shop?"</text>
 	<text>A Mantis crew here has hunkered down in the abdomen of a long-dead space-whale - the only way, presumably, for them to operate their black-market trade without detection. Worth a look?</text>
 	<text>A Mantis crew here has hunkered down in the abdomen of a long-dead space-whale - the only way, presumably, for them to operate their black-market trade without detection. Worth a look?</text>
-	<text planet="PLANET_UNPOPULATED">A Zoltan checkpoint guards this planet. After validating your ship documentation they give you permission to trade.</text>
+	<text planet="PLANET_UNPOPULATED">A Zoltan checkpoint guards this planet. After validating your ship's documentation they give you permission to trade.</text>
 	<text planet="PLANET_GAS">A trade depot circles around this gas giant. They sell locally produced ship equipment and peace-faction solidarity muffins.</text>
 	<text planet="PLANET_GAS">High energy spikes point you to a Zoltan factory ship that remains stationary in the orbit of this gas giant. The shield systems they manufacturer here must be excellent. After verifying your identity they ask if you want to have a look at the goods.</text>
 </textList>
@@ -3015,7 +3015,7 @@
 <!-- SELLING -->
 		<choice req="TE_GOODS_ROCK_LITERATURE" hidden="true">
 			<!-- best deal-->
-			<text>Someone must have been scanning you cargo holds: "Interesting freight you carry. I know some researcher here who would pay good scrap for that. Should a make contact with them?" [Sell Religious Rock Literature for about 105 Scrap]</text>
+			<text>Someone must have been scanning you cargo holds: "Interesting freight you carry. I know a researcher here who would pay good scrap for that. You should contact them." [Sell Religious Rock Literature for about 105 Scrap]</text>
 			<event>
 				<text load="STORE_ZOLTAN_SELL_TEXT"/>
 				<modifyPursuit amount="1"/>
@@ -3026,7 +3026,7 @@
 		</choice>
 		<choice req="TE_GOODS_ROCK_HULLS" hidden="true">
 			<!-- best deal-->
-			<text>While excelling with their shield technology, the Zoltan lack in the field of hull construction. Imported hull panels ar valued highly accordingly. [Sell Ship Hull Panels for about 90 Scrap]</text>
+			<text>While excelling with their shield technology, the Zoltan lack in the field of hull construction. Imported hull panels are valued highly accordingly. [Sell Ship Hull Panels for about 90 Scrap]</text>
 			<event>
 				<text load="STORE_ZOLTAN_SELL_TEXT"/>
 				<modifyPursuit amount="1"/>
@@ -3048,7 +3048,7 @@
 		</choice>
 		<choice req="TE_GOODS_MANTIS_BOUNTY" hidden="true">
 			<!-- best deal-->
-			<text>A nearby Zoltan ship contacts you: "I represent the Zoltan interstellar cultural academy. Have you come across cultural artifacts on your travel? We always seek to extend our collection." [Sell Looted Bounty for about 80 Scrap]</text>
+			<text>A nearby Zoltan ship contacts you: "I represent the Zoltan interstellar cultural academy. Have you come across cultural artifacts on your travels? We always seek to extend our collection." [Sell Looted Bounty for about 80 Scrap]</text>
 			<event>
 				<text load="STORE_ZOLTAN_SELL_TEXT"/>
 				<modifyPursuit amount="1"/>
@@ -3070,7 +3070,7 @@
 		</choice>
 		<choice req="TE_GOODS_PIRATE_ARMS" hidden="true">
 			<!-- best deal-->
-			<text>The Zoltan peace synod buys small arms to re-manufacture them into agriculture tools. Some say they actually just store the guns for the upcoming war. Whatever is true, they definitely pay good scrap. [Sell Small Arms for about 110 Scrap]</text>
+			<text>The Zoltan Peace Synod buys small arms to re-manufacture them into agriculture tools. Some say they actually just store the guns for the upcoming war. Whatever is true, they definitely pay good scrap. [Sell Small Arms for about 110 Scrap]</text>
 			<event>
 				<text load="STORE_ZOLTAN_SELL_TEXT"/>
 				<modifyPursuit amount="1"/>
@@ -3218,16 +3218,16 @@
 
 <textList name="STORE_ZOLTAN_BUY_TEXT">
 	<text>You transfer the scrap. While your crew loads the cargo you have a look at the ship equipment the shop also also offers. Time passes.</text>
-	<text>You write a scrap transfer order. Processing it takes a while. Loading the cargo takes even longer. You check the ship equipment catalog while waiting.</text>
+	<text>You write a scrap transfer order. Processing it takes a while. Loading the cargo takes even longer. You check the ship equipment catalogue while waiting.</text>
 	<text>You hand over the crates with the scrap. Loading the cargo takes it's time. The cargo drones are in much less of a hurry than you. While waiting you get a chance to check the ship equipment they offer here.</text>
 	<text>To seal the deal you have to give detailed explanations on your trade license and your (fake) ship registration. Everything is double checked. Why is this taking so long? Then the cargo is finally loaded. Slowly. At last you get a chance to look at the ship gear they also offer.</text>
 </textList>
 
 <textList name="STORE_ZOLTAN_SELL_TEXT">
-	<text>It takes a while to negotiate a good price. After receiving some scrap as advance you are asked to unload the cargo at the shop to get the rest of your payment. [Reminder: Not selling off the goods at the shop breaks the trade system and means you are cheating.]</text>
+	<text>It takes a while to negotiate a good price. After receiving some scrap as an advance you are asked to unload the cargo at the shop to get the rest of your payment. [Reminder: Not selling off the goods at the shop breaks the trade system and means you are cheating.]</text>
 	<text>You try to negotiate a good price. After receiving some scrap as advance you are asked to unload the cargo at the shop to get the rest of your payment. This all took really long. [Reminder: Not selling off the goods at the shop breaks the trade system and means you are cheating.]</text>
 	<text>After time consuming haggling you reach an agreement. You still have to unload the cargo at the shop to receive the rest of your payment. [Reminder: Not selling off the goods at the shop breaks the trade system and means you are cheating.]</text>
-	<text>After time consuming negotiations you get an advance payment. "You get the rest after you unloaded the cargo at the shop." They don't seem to trust you much. [Reminder: Not selling off the goods at the shop breaks the trade system and means you are cheating.]</text>
+	<text>After time consuming negotiations you get an advance payment. "You get the rest after you unload the cargo at the shop." They don't seem to trust you much. [Reminder: Not selling off the goods at the shop breaks the trade system and means you are cheating.]</text>
 	<text>You pretend that the goods are really worth that much and the trader pretends he isn't really interested. An invitation for some synth tea leads to tough negotiations, but you remain patient. After taking your scrap advance you have to transfer the cargo to the shop to seal the deal. [Reminder: Not selling off the goods at the shop breaks the trade system and means you are cheating.]</text>
 </textList>
 
@@ -3271,7 +3271,7 @@
 <!-- SELLING -->
 		<choice req="TE_GOODS_ROCK_LITERATURE" hidden="true">
 			<!-- best deal-->
-			<text>Someone must have been scanning you cargo holds: "Interesting freight you carry. I know some researcher here who would pay good scrap for that. Should a make contact with them?" [Sell Religious Rock Literature for about 105 Scrap]</text>
+			<text>Someone must have been scanning you cargo holds: "Interesting freight you carry. I know a researcher here who would pay good scrap for that. You should contact them?" [Sell Religious Rock Literature for about 105 Scrap]</text>
 			<event>
 				<text load="STORE_SELL_TEXT_BOOSTED"/>
 				<item_modify>
@@ -3281,7 +3281,7 @@
 		</choice>
 		<choice req="TE_GOODS_ROCK_HULLS" hidden="true">
 			<!-- best deal-->
-			<text>While excelling with their shield technology, the Zoltan lack in the field of hull construction. Imported hull panels ar valued highly accordingly. [Sell Ship Hull Panels for about 90 Scrap]</text>
+			<text>While excelling with their shield technology, the Zoltan lack in the field of hull construction. Imported hull panels are valued highly accordingly. [Sell Ship Hull Panels for about 90 Scrap]</text>
 			<event>
 				<text load="STORE_SELL_TEXT_BOOSTED"/>
 				<item_modify>
@@ -3321,7 +3321,7 @@
 		</choice>
 		<choice req="TE_GOODS_PIRATE_ARMS" hidden="true">
 			<!-- best deal-->
-			<text>The Zoltan peace synod buys small arms to re-manufacture them into agriculture tools. Some say they actually just store the guns for the upcoming war. Whatever is true, they definitely pay good scrap. [Sell Small Arms for about 110 Scrap]</text>
+			<text>The Zoltan Peace Synod buys small arms to re-manufacture them into agriculture tools. Some say they actually just store the guns for the upcoming war. Whatever is true, they definitely pay good scrap. [Sell Small Arms for about 110 Scrap]</text>
 			<event>
 				<text load="STORE_SELL_TEXT_BOOSTED"/>
 				<item_modify>
