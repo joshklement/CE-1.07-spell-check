@@ -1023,7 +1023,7 @@
 <weaponBlueprint name="BA_MISSILES_COCKATRICE">
 	<type>MISSILES</type>
 	<title>Cockatrice Missile</title>
-	<short>Cockatrice</short>
+	<short>Cockatri</short>
 	<desc>Innovative missile design allows for three projectiles for the cost of one.</desc>
 	<tooltip>Fires 3 missiles; 1 damage each; pierces all shields.</tooltip>
 	<damage>1</damage>
