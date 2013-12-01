@@ -18,11 +18,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -80,11 +80,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -138,7 +138,7 @@
 	<text>The ship computer informs the crew: "Threat level 2 hostile approaching. Armed engagement imminent."</text>
 	<text>The ship computer reassures the crew: "Simulations show good success chances for this engagement. Remain calm and do your job."</text>
 	<text>Red lights flicker on your console. The enemy is rated threat level 3.</text>
-	<text>You calmly sit down in the captains chair and give the final order: "Engage!"</text>
+	<text>You calmly sit down in the captain's chair and give the final order: "Engage!"</text>
 	<text>Sirens glare on board the ship. Battle stations!</text>
 	<text>Combat is imminent. You get to your console and sound the red alert.</text>
 	<text>The crew runs for their stations.</text>
@@ -150,9 +150,9 @@
 	<text>Your crew reports: "We are moving in hot."</text>
 </textList>
 <textList name="CE_PRE_FIGHT_ION_TEXT">
-	<text>The enemy shields flicker and on of their protective layers collapses. This should soften them up a bit.</text>
+	<text>The enemy shields flicker and one of their protective layers collapses. This should soften them up a bit.</text>
 	<text>The enemy shields start to crackle, electric discharges everywhere. Seems the Ion field works well.</text>
-	<text>Lightening flashes from the enemy shields. One of their shield bubbles collapses and stays down.</text>
+	<text>Lightning flashes from the enemy shields. One of their shield bubbles collapses and stays down.</text>
 	<text>The ion field depletes one of the enemy shield bubbles.</text>
 	<text>You augment once again disrupts an opponents shields.</text>
 	<text>You crew reports: "Good effect on target captain. Enemy defenses weakened."</text>
@@ -168,13 +168,13 @@
 <textList name="CE_PRE_FIGHT_BIOWEAPON_TEXT">
 	<text>"Captain?" Your crew awaits verification of the order. You push your concerns aside and order the activation of the bio weapon. The enemy crew will suffer greatly, unless their life support system is quite advanced.</text>
 	<text>"Eh... right, targeting radiation projector..." Your crew seems to be quite disturbed by the excessive use of this weapon.</text>
-	<text>Your first mate sights. "Radiation projector deployed, captain. Good effect on target."</text>
+	<text>Your first mate sighs. "Radiation projector deployed, captain. Good effect on target."</text>
 	<text>Your first mate nods silently. Your augment begins to irradiate the enemy vessel.</text>
 </textList>
 
 <eventList name="CE_PRE_FIGHT_EFFECTOR">
 			<event>
-				<text>Your electronic warfare device intrudes into the enemy computer. "Hacking routines in place. Target, captain?"</text>
+				<text>Your electronic warfare device invades the enemy's computer. "Hacking routines in place. Target, captain?"</text>
 				<choice hidden="true">
 					<text>Weapons.</text>
 					<event load="CE_PRE_FIGHT_EFFECTOR_RESULTS_WEAPONS_1"/>
@@ -186,7 +186,7 @@
 				<choice hidden="true">
 					<text>Artillery.</text>
 					<event>
-						<text>The effector intrudes into the enemy artillery system and reroutes power away from it. That should increase the charge time significantly.</text>
+						<text>The effector invades the enemy's artillery system and reroutes power away from it. That should increase the charge time significantly.</text>
 						<status type="loss" target="enemy" system="artillery" amount="2"/>
 						<choice hidden="true"> 
 							<text>Continue...</text>
@@ -246,7 +246,7 @@
 				<choice hidden="true">
 					<text>Other system.</text>
 					<event>
-						<text>Your electronic warfare device intrudes into the enemy computer. "Hacking routines in place. Target, captain?"</text>
+						<text>Your electronic warfare device invades the enemy's computer. "Hacking routines in place. Target, captain?"</text>
 						<choice hidden="true">
 							<text>Teleporter.</text>
 							<event>
@@ -326,7 +326,7 @@
 						</choice>
 					</event>
 					<event>
-												<text>The enemy firewalls proof to advanced for your hacking device.</text>
+												<text>The enemy firewalls prove too advanced for your hacking device.</text>
 						<choice hidden="true"> 
 							<text>Continue...</text>
 							<event/>
@@ -348,7 +348,7 @@
 						</choice>
 					</event>
 					<event>
-												<text>The enemy firewalls proof to advanced for your hacking device.</text>
+												<text>The enemy firewalls prove too advanced for your hacking device.</text>
 						<choice hidden="true"> 
 							<text>Continue...</text>
 							<event/>
@@ -359,7 +359,7 @@
 
 <eventList name="CE_PRE_FIGHT_EFFECTOR_RESULTS_DRONES_1">
 					<event>
-						<text>The hacking attempt succeeds. The enemy drone control looses system power.</text>
+						<text>The hacking attempt succeeds. The enemy drone control loses system power.</text>
 						<status type="loss" target="enemy" system="drones" amount="1"/>
 						<choice hidden="true"> 
 							<text>Continue...</text>
@@ -385,7 +385,7 @@
 
 <eventList name="CE_PRE_FIGHT_EFFECTOR_RESULTS_DRONES_2">
 					<event>
-						<text>The hacking attempt succeeds. The enemy drone control looses system power.</text>
+						<text>The hacking attempt succeeds. The enemy drone control loses system power.</text>
 						<status type="loss" target="enemy" system="drones" amount="1"/>
 						<choice hidden="true"> 
 							<text>Continue...</text>
@@ -506,7 +506,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>Your jammer does his thing and the enemy weapons are partially scrambled.</text>
+		<text>Your jammer does it's thing and the enemy weapons are partially scrambled.</text>
 		<status type="loss" target="enemy" system="weapons" amount="2"/>
 		<choice hidden="true"> 
 			<text>Continue...</text>
@@ -518,7 +518,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>Your opponent surely didnt expect this. His weapon targeting fails, making some of his advanced armaments useless.</text>
+		<text>Your opponent surely didn't expect this. His weapon targeting fails, making some of his advanced armaments useless.</text>
 		<status type="loss" target="enemy" system="weapons" amount="2"/>
 		<choice hidden="true"> 
 			<text>Continue...</text>
@@ -565,7 +565,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>Your jamming augments seem to be useless against the more advanced targeting systems of this enemy. You will have to deal with full fire from his weapon array.</text>
+		<text>Your jamming augments seem to be useless against the more advanced targeting systems of this enemy. You will have to deal with fire from his full weapons array.</text>
 		<choice hidden="true"> 
 			<text>Continue...</text>
 			<event/>
@@ -590,7 +590,7 @@
 
 <eventList name="CE_DRONE_JAMMING_RESULTS_1">
 	<event>
-		<text>The enemy drones status lights flicker and turn off as their connection to the drone control is severed. One less problem to deal with.</text>
+		<text>The enemy drones status lights flicker and turn off as the connection to their drone control is severed. One less problem to deal with.</text>
 		<status type="loss" target="enemy" system="drones" amount="3"/>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -626,7 +626,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>The enemy drones status lights flicker and turn off as their connection to the drone control is severed. One less problem to deal with.</text>
+		<text>The enemy drones status lights flicker and turn off as the connection to their drone control is severed. One less problem to deal with.</text>
 		<status type="loss" target="enemy" system="drones" amount="3"/>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -689,15 +689,15 @@
 	<event>
 		<text>The internal generator provides power for a secondary combat augment.</text>
 		<choice hidden="true">
-			<text>Begin the engagement with he current augment configuration.</text>
+			<text>Begin the engagement with the current augment configuration.</text>
 			<event/>
 		</choice>
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_2"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_2"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -740,7 +740,7 @@
 		<status type="loss" target="enemy" system="weapons" amount="2"/>
 	</event>
 	<event>
-		<text>Your opponent surely didnt expect this. His weapon targeting fails, making some of his advanced armaments useless.</text>
+		<text>Your opponent surely didn't expect this. His weapon targeting fails, making some of his advanced armaments useless.</text>
 		<status type="loss" target="enemy" system="weapons" amount="2"/>
 	</event>
 	<event>
@@ -799,13 +799,13 @@
 	<event>
 		<text>The internal generator provides power for a secondary combat augment.</text>
 		<choice hidden="true">
-			<text>Begin the engagement with he current augment configuration.</text>
+			<text>Begin the engagement with the current augment configuration.</text>
 			<event/>
 		</choice>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
 			<event>
-				<text>Your electronic warfare device intrudes into the enemy computer. "Hacking routines in place. Target, captain?"</text>
+				<text>Your electronic warfare device invades the enemy's computer. "Hacking routines in place. Target, captain?"</text>
 				<choice hidden="true">
 					<text>Drone Control.</text>
 					<event load="CE_PRE_FIGHT_EFFECTOR_RESULTS_DRONES_2"/>
@@ -813,7 +813,7 @@
 				<choice hidden="true">
 					<text>Artillery.</text>
 					<event>
-						<text>The effector intrudes into the enemy artillery system and reroutes power away from it. That should increase the charge time significantly.</text>
+						<text>The effector invades the enemy's artillery system and reroutes power away from it. That should increase the charge time significantly.</text>
 						<status type="loss" target="enemy" system="artillery" amount="2"/>
 						<choice hidden="true"> 
 							<text>Continue...</text>
@@ -845,7 +845,7 @@
 				<choice hidden="true">
 					<text>Other system.</text>
 					<event>
-						<text>Your electronic warfare device intrudes into the enemy computer. "Hacking routines in place. Target, captain?"</text>
+						<text>Your electronic warfare device invades the enemy's computer. "Hacking routines in place. Target, captain?"</text>
 						<choice hidden="true">
 							<text>Teleporter.</text>
 							<event>
@@ -879,7 +879,7 @@
 			</event>
 		</choice>	
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_2"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -907,13 +907,13 @@
 	<event>
 		<text>The internal generator provides power for a secondary combat augment.</text>
 		<choice hidden="true">
-			<text>Begin the engagement with he current augment configuration.</text>
+			<text>Begin the engagement with the current augment configuration.</text>
 			<event/>
 		</choice>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
 			<event>
-				<text>Your electronic warfare device intrudes into the enemy computer. "Hacking routines in place. Target, captain?"</text>
+				<text>Your electronic warfare device invades the enemy's computer. "Hacking routines in place. Target, captain?"</text>
 				<choice hidden="true">
 					<text>Weapons.</text>
 					<event load="CE_PRE_FIGHT_EFFECTOR_RESULTS_WEAPONS_2"/>
@@ -921,7 +921,7 @@
 				<choice hidden="true">
 					<text>Artillery.</text>
 					<event>
-						<text>The effector intrudes into the enemy artillery system and reroutes power away from it. That should increase the charge time significantly.</text>
+						<text>The effector invades the enemy's artillery system and reroutes power away from it. That should increase the charge time significantly.</text>
 						<status type="loss" target="enemy" system="artillery" amount="2"/>
 						<choice hidden="true"> 
 							<text>Continue...</text>
@@ -953,7 +953,7 @@
 				<choice hidden="true">
 					<text>Other system.</text>
 					<event>
-						<text>Your electronic warfare device intrudes into the enemy computer. "Hacking routines in place. Target, captain?"</text>
+						<text>Your electronic warfare device invades the enemy's computer. "Hacking routines in place. Target, captain?"</text>
 						<choice hidden="true">
 							<text>Teleporter.</text>
 							<event>
@@ -987,7 +987,7 @@
 			</event>
 		</choice>
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_2"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -1016,13 +1016,13 @@
 	<event>
 		<text>The internal generator provides power for a secondary combat augment.</text>
 		<choice hidden="true">
-			<text>Begin the engagement with he current augment configuration.</text>
+			<text>Begin the engagement with the current augment configuration.</text>
 			<event/>
 		</choice>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
 			<event>
-				<text>Your electronic warfare device intrudes into the enemy computer. "Hacking routines in place. Target, captain?"</text>
+				<text>Your electronic warfare device invades the enemy's computer. "Hacking routines in place. Target, captain?"</text>
 				<choice hidden="true">
 					<text>Weapons.</text>
 					<event load="CE_PRE_FIGHT_EFFECTOR_RESULTS_WEAPONS_2"/>
@@ -1034,7 +1034,7 @@
 				<choice hidden="true">
 					<text>Artillery.</text>
 					<event>
-						<text>The effector intrudes into the enemy artillery system and reroutes power away from it. That should increase the charge time significantly.</text>
+						<text>The effector invades the enemy's artillery system and reroutes power away from it. That should increase the charge time significantly.</text>
 						<status type="loss" target="enemy" system="artillery" amount="2"/>
 						<choice hidden="true"> 
 							<text>Continue...</text>
@@ -1066,7 +1066,7 @@
 				<choice hidden="true">
 					<text>Other system.</text>
 					<event>
-						<text>Your electronic warfare device intrudes into the enemy computer. "Hacking routines in place. Target, captain?"</text>
+						<text>Your electronic warfare device invades the enemy's computer. "Hacking routines in place. Target, captain?"</text>
 						<choice hidden="true">
 							<text>Medbay.</text>
 							<event>
@@ -1093,11 +1093,11 @@
 			</event>
 		</choice>
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_2"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_2"/>
 		</choice>
 		<choice req="AE_SHIELD_JAMMER" hidden="true"> 
@@ -1121,13 +1121,13 @@
 	<event>
 		<text>The internal generator provides power for a secondary combat augment.</text>
 		<choice hidden="true">
-			<text>Begin the engagement with he current augment configuration.</text>
+			<text>Begin the engagement with the current augment configuration.</text>
 			<event/>
 		</choice>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
 			<event>
-				<text>Your electronic warfare device intrudes into the enemy computer. "Hacking routines in place. Target, captain?"</text>
+				<text>Your electronic warfare device invades the enemy's computer. "Hacking routines in place. Target, captain?"</text>
 				<choice hidden="true">
 					<text>Weapons.</text>
 					<event load="CE_PRE_FIGHT_EFFECTOR_RESULTS_WEAPONS_2"/>
@@ -1139,7 +1139,7 @@
 				<choice hidden="true">
 					<text>Artillery.</text>
 					<event>
-						<text>The effector intrudes into the enemy artillery system and reroutes power away from it. That should increase the charge time significantly.</text>
+						<text>The effector invades the enemy's artillery system and reroutes power away from it. That should increase the charge time significantly.</text>
 						<status type="loss" target="enemy" system="artillery" amount="2"/>
 						<choice hidden="true"> 
 							<text>Continue...</text>
@@ -1164,7 +1164,7 @@
 				<choice hidden="true">
 					<text>Other system.</text>
 					<event>
-						<text>Your electronic warfare device intrudes into the enemy computer. "Hacking routines in place. Target, captain?"</text>
+						<text>Your electronic warfare device invades the enemy's computer. "Hacking routines in place. Target, captain?"</text>
 						<choice hidden="true">
 							<text>Teleporter.</text>
 							<event>
@@ -1198,11 +1198,11 @@
 			</event>
 		</choice>
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_2"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_2"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -1223,13 +1223,13 @@
 	<event>
 		<text>The internal generator provides power for a secondary combat augment.</text>
 		<choice hidden="true">
-			<text>Begin the engagement with he current augment configuration.</text>
+			<text>Begin the engagement with the current augment configuration.</text>
 			<event/>
 		</choice>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
 			<event>
-				<text>Your electronic warfare device intrudes into the enemy computer. "Hacking routines in place. Target, captain?"</text>
+				<text>Your electronic warfare device invades the enemy's computer. "Hacking routines in place. Target, captain?"</text>
 				<choice hidden="true">
 					<text>Weapons.</text>
 					<event load="CE_PRE_FIGHT_EFFECTOR_RESULTS_WEAPONS_2"/>
@@ -1241,7 +1241,7 @@
 				<choice hidden="true">
 					<text>Artillery.</text>
 					<event>
-						<text>The effector intrudes into the enemy artillery system and reroutes power away from it. That should increase the charge time significantly.</text>
+						<text>The effector invades the enemy's artillery system and reroutes power away from it. That should increase the charge time significantly.</text>
 						<status type="loss" target="enemy" system="artillery" amount="2"/>
 						<choice hidden="true"> 
 							<text>Continue...</text>
@@ -1273,7 +1273,7 @@
 				<choice hidden="true">
 					<text>Other system.</text>
 					<event>
-						<text>Your electronic warfare device intrudes into the enemy computer. "Hacking routines in place. Target, captain?"</text>
+						<text>Your electronic warfare device invades the enemy's computer. "Hacking routines in place. Target, captain?"</text>
 						<choice hidden="true">
 							<text>Teleporter.</text>
 							<event>
@@ -1300,11 +1300,11 @@
 			</event>
 		</choice>
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_2"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_2"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -1385,14 +1385,14 @@
 		<choice hidden="true"> 
 			<text>Try to find a safe course to leave the field.</text>
 			<event>
-				<text>You attemt to get out of the field undamaged, but some asteroids manage to get through your ship's defenses.</text>
+				<text>You attempt to get out of the field undamaged, but some asteroids manage to get through your ship's defenses.</text>
 			<damage amount="5"/>
 			</event>
 		</choice>
 		<choice req="AE_ADV_THRUSTERS" hidden="true"> 
 			<text>(Advanced Proximity Navigation) Calculate optimal evasive course-pattern. We better get out of here.</text>
 			<event>
-				<text>The navigation computer allows you to leave the field unscaled.</text>
+				<text>The navigation computer allows you to leave the field unscathed.</text>
 			</event>
 		</choice>
 	</event>
@@ -1405,11 +1405,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -1460,11 +1460,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -1509,19 +1509,19 @@
 </eventList>
 <eventList name="TE_LOOT_GOODS_ASTEROID_EXPLORE">
 	<event>
-		<text>Scans reveal that the ships cargo holds are full of rocks. It must have been mining asteroid ore. You take the cargo on board.</text>
+		<text>Scans reveal that the ship's cargo holds are full of rocks. It must have been mining asteroid ore. You take the cargo on board.</text>
 		<augment name="TE_GOODS_ROCK_ORE"/>
 	</event>
 	<event>
-		<text>Scans reveal that the ships cargo holds are full of rocks. It must have been mining asteroid ore. You take the cargo on board.</text>
+		<text>Scans reveal that the ship's cargo holds are full of rocks. It must have been mining asteroid ore. You take the cargo on board.</text>
 		<augment name="TE_GOODS_ROCK_ORE"/>
 	</event>
 	<event>
-		<text>The scanner indicate the ships cargo consisted mainly of simple industrial equipment. The machines are still intact and your crew loads them into the cargo holds.</text>
+		<text>The scanner indicate the ship's cargo consist mainly of simple industrial equipment. The machines are still intact and your crew loads them into the cargo holds.</text>
 		<augment name="TE_GOODS_ENGI_MACHINES"/>
 	</event>
 	<event>
-		<text>Scanners reveal that the ships freight consisted mainly of food rations. Your crew loads the supplies into the cargo holds.</text>
+		<text>Scanners reveal that the ship's freight consist mainly of food rations. Your crew loads the supplies into the cargo holds.</text>
 		<augment name="TE_GOODS_CIVILIAN_FOOD"/>
 	</event>
 	<event>
@@ -1576,11 +1576,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -1647,11 +1647,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -1712,11 +1712,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -1787,11 +1787,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -1856,11 +1856,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -1927,14 +1927,14 @@
 	<choice hidden="true" req="rock">
 		<text>(Rock Crew) Send your Rock crew-member to prevent a riot.</text>
 		<event>
-			<text>It's unlikely the Rock's impressive immune system is susceptible to a human virus so you send it in. It is able to intimidate the workers long enough for the colony forces to set up a quarantine. Their leaders offer a reward and assure you they will try to find a cure as soon as possible.</text>
+			<text>It's unlikely the Rock's impressive immune system is susceptible to a human virus so you send it in. It is able to intimidate the workers long enough for colony security to set up a quarantine. Their leaders offer a reward and assure you they will try to find a cure as soon as possible.</text>
 			<autoReward level="MED">stuff</autoReward>
 		</event>
 	</choice>
 	<choice hidden="true" req="ghost">
 		<text>(AI Avatar Crew) Send your AI crew-member to render some aid.</text>
 		<event>
-			<text>Holograms are immune to any disease. You upgrade the AI with an emergency medical program and send it in to help. After the miners verbally state the nature of the medical emergency the AI calculates the best course of action. The personal submits to quarantine and the colony leaders offer a reward.</text>
+			<text>Holograms are immune to any disease. You upgrade the AI with an emergency medical program and send it in to help. After the miners verbally state the nature of the medical emergency the AI calculates the best course of action. The personal submit to a quarantine and the colony leaders offer a reward.</text>
 			<autoReward level="MED">stuff</autoReward>
 		</event>
 	</choice>
@@ -2031,7 +2031,7 @@
 	<choice hidden="true" req="BA_BOMB_BIG">
 		<text>(Big Bomb) Provide artillery support.</text>
 		<event>
-			<text>You ask where they the suspect the source of infestation. "Room 2-3-9-2-1, why do you..." The detonation of the payload you beamed in disrupts communication for a moment. After a while you are hailed again "Well, we managed to eliminate the rest of the things, but now we are experiencing critical failure on some subsystems. Thanks for nearly blowing us up." They still transmit a small reward.</text>
+			<text>You ask where they the suspect the source of infestation is. "Room 2-3-9-2-1, why do you..." The detonation of the payload you beamed in disrupts communication for a moment. After a while you are hailed again "Well, we managed to eliminate the rest of the things, but now we are experiencing critical failure on some subsystems. Thanks for nearly blowing us up." They still transmit a small reward.</text>
 			<item_modify>
 				<item type="missiles" min="-1" max="-1"/>
 			</item_modify>
@@ -2067,11 +2067,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -2182,7 +2182,7 @@
 	<choice req="AE_TELEPORTER_JAMMER" hidden="true">
 		<text>(Teleporter Disruptor) Disrupt their teleporter signal.</text>
 		<event>
-			<text>The boarders have allready been sent out, but the disrupter scrambles the incomming particle beam. The boarders are dissolved into higher space, without ever realizing it. Not a single atom of their body remains in this galaxy to be burried. What a horrible death.</text>
+			<text>The boarders have already been sent out, but the disrupter scrambles the incoming particle beam. The boarders are dissolved into higher space, without ever realizing it. Not a single atom of their body remains in this galaxy to be buried. What a horrible death.</text>
 		</event>
 	</choice>
 	<choice>
@@ -2219,7 +2219,7 @@
 		<text>You send your holographic crewmen drone to explore the station.  What it find is disconcerting...  It appears that something has caused the scientists and guards to tear each other to pieces.  You decide to abandon the station for fear that it is contagious and instruct the avatar to retreat.</text>
 	</event>
 	<event>
-		<text>Once on board the station, your avatar discovers only stangely disfigured, frenzied scientists and guards. The mob seems undisturbed by its presense, but you decide its better to disengage from the station and and instruct the avatar to retreat.</text>
+		<text>Once on board the station, your avatar discovers only strangely disfigured, frenzied scientists and guards. The mob seems undisturbed by its presence, but you decide its better to disengage from the station and and instruct the avatar to retreat.</text>
 	</event>
 	<event>
 		<text>Your holographic crewmen reports no people are to be found. But the remnants of a recent battle on-board the ship are obvious.  You instruct the avatar to retrieve some useful materials before leaving.</text>
@@ -2255,11 +2255,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -2314,7 +2314,7 @@
 		<choice hidden="true" req="medbay" lvl="3">
 			<text>(Medbay) Have the advanced medbay analyze their condition.</text>
 			<event>
-				<text>You hold them off while retreating into the med-bay.  Its advanced systems determine that an alien neurotoxin is the cause of their frenzy.  It synthesizes an antidote and releases it into the room.  After a time, the scientists recover.  One offers their services as thanks for saving them.</text>
+				<text>You hold them off while retreating into the med-bay.  Its advanced systems determine that an alien neurotoxin is the cause of their frenzy.  It synthesizes an antidote and releases it into the room.  After a time, the scientists recover.  One offers his services as thanks for saving them.</text>
 				<crewMember amount="1"/>
 				<autoReward level="MED">scrap_only</autoReward>
 			</event>
@@ -2333,7 +2333,7 @@
 		<choice hidden="true" req="teleporter"> 
 			<text>(Teleporter) Use your teleporter to retrieve your crew.</text>
 			<event>
-				<text>You beam your away team back to the ship and disengage from the station.  The ship is safe, and the science-station lyes unarmed and unshielded in front of you. Purging it from the infected would be easy, although you could easily jump away now.</text>
+				<text>You beam your away team back to the ship and disengage from the station.  The ship is safe, and the science-station lies unarmed and unshielded in front of you. Purging it from the infected would be easy, although you could easily jump away now.</text>
 				<choice>
 					<text>Fight the infected on board the ship and flag the station as hostile.</text>			
 					<event>
@@ -2345,11 +2345,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -2409,7 +2409,7 @@
 			</event>
 		</choice>
 		<choice hidden="true" req="medbay" lvl="3"> 
-			<text>(Advanced Medbay) Have the advanced medbay analyze their condition.</text>
+			<text>(Advanced Medbay) Have the advanced medbay analyse their condition.</text>
 			<event>
 				<text>You hold them off while retreating into the med-bay.  Its advanced systems determine that an alien neurotoxin is driving your crew member insane.  It synthesizes an antidote and releases it into the ship.  After a time, the frenzied scientists recover and one offers to help out as thanks for saving them.</text>
 				<crewMember amount="1"/>
@@ -2429,11 +2429,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -2485,11 +2485,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -2576,7 +2576,7 @@
 				<event load="C_PIRACY_RESULTS"/>
 			</choice>
 			<choice req="ROCK_ARMOR" hidden="true"> 
-				<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they were signing on for a moral joyride here.</text>
+				<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they weren't signing on for a moral joyride here.</text>
 				<event>
 					<text>Your crew indeed expected you might handle things harshly like this. The mission is paramount after all, the Federation has to be re-established!</text>
 					<ship hostile="true"/>
@@ -2585,11 +2585,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -2642,11 +2642,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -2690,7 +2690,7 @@
 				</event>
 			</choice>
 			<choice req="SLUG_GEL" hidden="true"> 
-				<text>(Slug Ship) You command a vessel of the sly and treacherous Slugs. You crew knew this mission wouldn't go that cleanly.</text>
+				<text>(Slug Ship) You command a vessel of the sly and treacherous Slugs. You crew knew this mission wouldn't go that cleanlyly.</text>
 				<event>
 					<text>Desperate times call for desperate measures. Your crew agrees that sometimes individual lives mean nothing. We need to get to the Federation base at any cost.</text>
 					<ship hostile="true"/>
@@ -2699,11 +2699,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -2784,7 +2784,7 @@
 				<event load="C_PIRACY_RESULTS"/>
 			</choice>
 			<choice req="ROCK_ARMOR" hidden="true"> 
-				<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they were signing on for a moral joyride here.</text>
+				<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they weren't signing on for a moral joyride here.</text>
 				<event>
 					<text>Your crew indeed expected you might handle things harshly like this. The mission is paramount after all, the Federation has to be re established!</text>
 					<ship hostile="true"/>
@@ -2793,11 +2793,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -2850,11 +2850,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -2898,7 +2898,7 @@
 				</event>
 			</choice>
 			<choice req="SLUG_GEL" hidden="true"> 
-				<text>(Slug Ship) You command a vessel of the sly and treacherous Slugs. You crew knew this mission wouldn't go that cleanly.</text>
+				<text>(Slug Ship) You command a vessel of the sly and treacherous Slugs. You crew knew this mission wouldn't go that cleanlyly.</text>
 				<event>
 					<text>Desperate times call for desperate measures. Your crew agrees that sometimes individual lives mean nothing. We need to get to the Federation base at any cost.</text>
 					<ship hostile="true"/>
@@ -2907,11 +2907,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -2984,7 +2984,7 @@
 				<event load="C_PIRACY_RESULTS"/>
 			</choice>
 			<choice req="ROCK_ARMOR" hidden="true"> 
-				<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they were signing on for a moral joyride here.</text>
+				<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they weren't signing on for a moral joyride here.</text>
 				<event>
 					<text>Your crew indeed expected you might handle things harsh like this. The mission is paramount after all, the Federation has to be re-established!</text>
 					<ship hostile="true"/>
@@ -2993,11 +2993,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -3050,11 +3050,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -3098,7 +3098,7 @@
 				</event>
 			</choice>
 			<choice req="SLUG_GEL" hidden="true"> 
-				<text>(Slug Ship) You command a vessel of the sly and treacherous Slugs. You crew knew this mission wouldn't go that cleanly.</text>
+				<text>(Slug Ship) You command a vessel of the sly and treacherous Slugs. You crew knew this mission wouldn't go that cleanlyly.</text>
 				<event>
 					<text>Desperate times call for desperate measures. Your crew agrees that sometimes individual lives mean nothing. We need to get to the Federation base at any cost.</text>
 					<ship hostile="true"/>
@@ -3107,11 +3107,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -3166,11 +3166,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -3234,11 +3234,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -3299,11 +3299,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -3384,11 +3384,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -3473,7 +3473,7 @@
 	<event>
 		<text>You take a few careful shots but you expose a mineral patch in the rock that reacts violently with your weapon.</text>
 		<choice req="AE_ADV_THRUSTERS" hidden="true">
-			<text>(Advanced Proximity Navigation) Debris allert!</text>
+			<text>(Advanced Proximity Navigation) Debris alert!</text>
 			<event>
 				<text>A shockwave rocks the ship and the navigation AI barely manages to fire the booster in time in order to evade a huge debris parts. When you regain control you find there is not much left of the ship.</text>
 				<autoReward level="LOW">scrap_only</autoReward>
@@ -3506,11 +3506,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -3595,7 +3595,7 @@
 	<choice req="AE_WEAPON_JAMMER" hidden="true">
 		<text>(Targeting Jammer) Scramble the satelite targeting.</text>
 		<event>
-			<text>You activat the jammers and tell the repair crew that it's safe to move in. The defense sattellites fire constantly, but score almost no hits. They you are able to safely disable the system offer a reward.</text>
+			<text>You activat the jammers and tell the repair crew that it's safe to move in. The defense satellites fire constantly, but score almost no hits. They you are able to safely disable the system offer a reward.</text>
 			<autoReward level="HIGH">standard</autoReward>
 		</event>
 	</choice>
@@ -3615,11 +3615,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -3686,7 +3686,7 @@
 		<choice req="AE_ADV_THRUSTERS" hidden="true">
 			<text>(Advanced Proximity Navigation) Prepare for the counterattack!</text>
 			<event>
-				<text>The navigation computer is not designed for combat situations. You dont manage to evade the last swarm missile barrage and take a little damage before escaping. The station will need to find help elsewhere.</text>
+				<text>The navigation computer is not designed for combat situations. You don't manage to evade the last swarm missile barrage and take a little damage before escaping. The station will need to find help elsewhere.</text>
 				<damage amount="2"/>
 			</event>
 		</choice>
@@ -3751,7 +3751,7 @@
 		<choice req="AE_ADV_THRUSTERS" hidden="true">
 			<text>(Advanced Proximity Navigation) Stabilize the ship!</text>
 			<event>
-				<text>Your adcanced navigagion AI takes over the ship cotroll and helps evading some dangerous follow up explosions. The scientists are not so lucky. You watch helplessly as the last of the survivors are consumed in the collapse of the station.</text>
+				<text>Your advanced navigation AI takes over the ship control and helps in evading some dangerous follow up explosions. The scientists are not so lucky. You watch helplessly as the last of the survivors are consumed in the collapse of the station.</text>
 				<autoReward level="LOW">scrap_only</autoReward>
 			</event>
 		</choice>
@@ -3792,11 +3792,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -3875,22 +3875,22 @@
 </event>
 <eventList name="MANTIS_LANDING_PARTY_LEAVE">
 	<event>
-		<text>As you try to leave, a patrol spots you. Wailing sirens begin to blare around the camp and the ship moves in to attack!</text>
+		<text>As you try to leave, a patrol spots you. Wailing sirens begin to blare around the camp and a ship moves in to attack!</text>
 	<choice req="ENERGY_SHIELD" hidden="true">
 		<text>(Zoltan Shield) Reconfigure the shield frequencies to scramble the enemy artillery targeting.</text>
 	<event>
-		<text>Your advanced shield technlogy prevents the hostile artillery weapons from locking on to your vessel. The spotter ship will get no support fire.</text>
+		<text>Your advanced shield technology prevents the hostile artillery weapons from locking on to your vessel. The spotter ship will get no support fire.</text>
 		<ship load="CE_SPOTTER_MANTIS_ARTILLERY_SUPERSHIELD" hostile="true"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -3943,11 +3943,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -4004,11 +4004,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -4052,7 +4052,7 @@
 </event>
 
 <event name="ALISON_DEFECTOR" unique="true">
-	<text>A Rebel ship is patrolling this beacon, and immediately turns to engage. As your crew scramble to battle readiness, sensors detect a short-range teleporter signal. An intruder is on board!</text>
+	<text>A Rebel ship is patrolling this beacon, and immediately turns to engage. As your crew scrambles to battle stations, sensors detect a short-range teleporter signal. An intruder is on board!</text>
 	<ship load="REBEL" hostile="true"/>
 	<choice>
 		<text>Continue...</text>
@@ -4081,11 +4081,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -4135,11 +4135,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -4190,18 +4190,18 @@
 		<choice>
 			<text>Reject his offer again.</text>
 			<event>
-				<text>The defector gets desperate. "Im not going back!" He draws weapon.</text>
+				<text>The defector gets desperate. "I'm not going back!" He draws his weapon.</text>
 				<boarders min="1" max="1" class="human"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -4256,11 +4256,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -4311,11 +4311,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -4365,11 +4365,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -4419,11 +4419,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -4473,11 +4473,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -4528,11 +4528,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -4586,11 +4586,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -4641,11 +4641,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -4696,11 +4696,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -4751,11 +4751,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -4806,11 +4806,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -4861,11 +4861,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -4918,11 +4918,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -4972,11 +4972,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -5026,11 +5026,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -5083,11 +5083,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -5161,11 +5161,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -5216,11 +5216,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -5282,11 +5282,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -5365,7 +5365,7 @@
 	<choice req="AE_ADV_THRUSTERS" lvl="2" hidden="true">
 		<text>(Advanced Proximity Navigation) Plot a safe course for them.</text>
 		<event>	
-			<text>"Are you sure this will work? Allright..." The ship follows the course pattern your transmitted and sustains only minor damage. They offer you some of the scrap and fuel they were mining out of the asteroid as thanks.</text>
+			<text>"Are you sure this will work? Alright..." The ship follows the course pattern your transmitted and sustains only minor damage. They offer you some of the scrap and fuel they were mining out of the asteroid as thanks.</text>
 			<autoReward level="MED">fuel</autoReward>
 		</event>
 	</choice>
@@ -5374,11 +5374,11 @@
 
 <eventList name="FEDERATION_PLANET_SIGNAL_LIST">
 	<event>
-		<text>You find a smoldering Federation outpost, devastated by an orbital strike. A single medivac class is evacuating a few wounded survivors. "Our defense system had way to little reach. We didn't stand a chance against their cruiser. Scouts say the unit jumped to a nearby system. Better stay away from it!</text>
+		<text>You find a smouldering Federation outpost, devastated by an orbital strike. A single Medivac class is evacuating a few wounded survivors. "Our defense system had way to little reach. We didn't stand a chance against their cruiser. Scouts say the unit jumped to a nearby system. Better stay away from it!</text>
 		<choice>
 			<text>Continue...</text>
 			<event>
-				<text>They upload coordinates of the cruisers destination. Avoiding it seems advisable. Still, the loss of a capital ship would surly distract the fleet from pursuing you for a while...</text>
+				<text>They upload coordinates of the cruisers destination. Avoiding it seems advisable. Still, the loss of a capital ship would surely distract the fleet from pursuing you for a while...</text>
 				<quest event="C_CRUISER_AVOIDABLE"/>
 			</event>
 		</choice>
@@ -5404,18 +5404,18 @@
 	<choice req="AE_TELEPORTER_JAMMER" hidden="true">
 		<text>(Teleporter Disruptor) Prepare to be teleporter-scrambled, idiot!</text>
 		<event>
-			<text>You wait till the Rebels start to teleport, than activate the disruption field. The atoms of their away-team are scattered in higher space, only some pices of clothing make it on board. "What? ... You will pay for this!"</text>
+			<text>You wait till the Rebels start to teleport, than activate the disruption field. The atoms of their away-team are scattered in higher space, only some pieces of clothing make it on board. "What? ... You will pay for this!"</text>
 		<ship load="REBEL" hostile="true"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -5469,11 +5469,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -5536,11 +5536,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -5587,26 +5587,26 @@
 <textList name="C_CRUISER_AVOIDABLE_TEXT">
 	<text>As expected, a forward cruiser of the Rebel fleet remains stationary at this beacon. They hail: "This is the RS "Crowd Dispersal". This sector will fall to the Rebels soon. You will not stop us." They power up their engines and move in to engage.</text>
 	<text planet="PLANET_POPULATED">You arrive to find a Rebel cruiser bombarding a Federation settlement on a nearby planet. Radiation levels on the surface are pretty high. It is unlikely that anyone survived. "This is the RS "Lethal And Nonlethal Force". Seems you are a pretty important target. What did you do to anger the Rebellion this much?" They move in to engage.</text>
-	<text planet="PLANET_POPULATED_SMALL">As soon as you arrive you find yourself in the debris field of a small scale battle. Your scans conclude that a Federation medevac squadron has been eradicated by a cruiser that still orbits the closest moon. They identify as RS "Rock Stone Scissors All In One" and engage you as soon as they realize who you are.</text>
+	<text planet="PLANET_POPULATED_SMALL">As soon as you arrive you find yourself in the debris field of a small scale battle. Your scans conclude that a Federation Medevac squadron has been eradicated by a cruiser that still orbits the closest moon. They identify as RS "Rock Paper Scissors All In One" and engage you as soon as they realize who you are.</text>
 	<text>A barrage of shots fly by and your computer registers multiple weapon locks as soon as you arrive. As expected a Rebel cruiser, identifying as RS "Circuit Breaker", was waiting at the beacon.</text>
 	<text planet="PLANET_POPULATED">As expected you find a Rebel cruiser at these coordinates. It identifies as RS "Grinding Fun" and is busy attacking a small Federation station nearby. As you come in scanning range it immediately targets you.</text>
 
 	<text>As expected, a forward cruiser of the Rebel fleet remains stationary at this beacon. They hail: "This is the RS "Rapid Response". This sector will fall to the Rebels soon. You will not stop us." They power up their engines and move in to engage.</text>
 	<text planet="PLANET_POPULATED">You arrive to find a Rebel cruiser bombarding a Federation settlement on a nearby planet. Radiation levels on the surface are pretty high. It is unlikely that anyone survived. "This is the RS "Ammunition Collector". Seems you are a pretty important target. What did you do to anger the Rebellion this much?" They move in to engage.</text>
-	<text planet="PLANET_POPULATED_SMALL">As soon as you arrive you find yourself in the debris field of a small scale battle. Your scans conclude that a Federation medevac squadron has been eradicated by a cruiser that still orbits the closest moon. They identify as RS "Father Of Guns" and engage you as soon as they realize who you are.</text>
+	<text planet="PLANET_POPULATED_SMALL">As soon as you arrive you find yourself in the debris field of a small scale battle. Your scans conclude that a Federation Medevac squadron has been eradicated by a cruiser that still orbits the closest moon. They identify as RS "Father Of Guns" and engage you as soon as they realize who you are.</text>
 	<text>A barrage of shots flies by and your computer registers multiple weapon locks as soon as you arrive. As expected a Rebel cruiser, identifying as RS "Today: Revolution, Tomorrow: Cleanup", was waiting at the beacon.</text>
 	<text planet="PLANET_POPULATED">As expected you find a Rebel cruiser at these coordinates. It identifies as RS "To-Do List" and is busy attacking a small Federation station nearby. As you come in scanning range it immediately targets you.</text>
 
 	<text>As expected, a forward cruiser of the Rebel fleet remains stationary at this beacon. They hail: "This is the RS "Excessive Force". This sector will fall to the Rebels soon. You will not stop us." They power up their engines and move in to engage.</text>
 	<text planet="PLANET_POPULATED">You arrive to find a Rebel cruiser bombarding a Federation settlement on a nearby planet. Radiation levels on the surface are pretty high. It is unlikely that anyone survived. "This is the RS "They Hate Me". Seems you are a pretty important target. What did you do to anger the Rebellion this much?" They move in to engage.</text>
-	<text planet="PLANET_POPULATED_SMALL">As soon as you arrive you find yourself in the debris field of a small scale battle. Your scans conclude that a Federation medevac squadron has been eradicated by a cruiser that still orbits the closest moon. They identify as RS "Master Of Reloading" and engage you as soon as they realize who you are.</text>
+	<text planet="PLANET_POPULATED_SMALL">As soon as you arrive you find yourself in the debris field of a small scale battle. Your scans conclude that a Federation Medevac squadron has been eradicated by a cruiser that still orbits the closest moon. They identify as RS "Master Of Reloading" and engage you as soon as they realize who you are.</text>
 	<text>A barrage of shots fly by and your computer registers multiple weapon locks as soon as you arrive. As expected a Rebel cruiser, identifying as RS "Peace Through Superior Firepower", was waiting at the beacon.</text>
 	<text planet="PLANET_POPULATED">As expected you find a Rebel cruiser at these coordinates. It identifies as RS "Barely Scratched" and is busy attacking a small Federation station nearby. As you come in scanning range it immediately targets you.</text>
 </textList>
 
 <eventList name="DONOR_PONY_SELL">
 	<event>
-		<text>The seemingly docile creatures quickly turn violent when you reveal your hostile intentions. Their well-organized stampede forces you to draw weapons and make a rushed and shambolic retreat to the shuttle.</text>
+		<text>The seemingly docile creatures quickly turn violent when you reveal your hostile intentions. Their well-organized stampede forces you to draw weapons and make a rushed and haphazard retreat to the shuttle.</text>
 	</event>
 	<event>
 		<text>The seemingly docile creatures quickly turn violent when you show your hostile intentions. They stampede with terrifying force, trampling one of your crew before you have time to react. You fight your way back to the shuttle and prepare to jump.</text>
@@ -5654,7 +5654,7 @@
 				<choice hidden="true">
 					<text>Take the weapon and any spare scrap.</text>
 					<event>
-						<text>Your crew grabs what they can and returns to the ship before the asteroid hits. You take a look at what you've recovered once you move clear of the asteroid field.</text>
+						<text>Your crew grabs what they can and return to the ship before the asteroid hits. You take a look at what you've recovered once you move clear of the asteroid field.</text>
 						<autoReward level="LOW">weapon</autoReward>
 					</event>
 				</choice>
@@ -5730,11 +5730,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -5791,11 +5791,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -5860,7 +5860,7 @@
 				<event load="C_PIRACY_RESULTS"/>
 			</choice>
 			<choice req="ROCK_ARMOR" hidden="true"> 
-				<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they were signing on for a moral joyride here.</text>
+				<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they weren't signing on for a moral joyride here.</text>
 				<event>
 					<text>Your crew indeed expected you might handle things harsh like this. The mission is paramount after all, the Federation has to be re-established!</text>
 					<ship hostile="true"/>
@@ -5869,11 +5869,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -5926,11 +5926,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -5974,7 +5974,7 @@
 				</event>
 			</choice>
 			<choice req="SLUG_GEL" hidden="true"> 
-				<text>(Slug Ship) You command a vessel of the sly and treacherous Slugs. You crew knew this mission wouldn't go that clean.</text>
+				<text>(Slug Ship) You command a vessel of the sly and treacherous Slugs. You crew knew this mission wouldn't go that cleanly.</text>
 				<event>
 					<text>Desperate times call for desperate measures. Your crew agrees that sometimes individual lives mean nothing. We need to get to the Federation base at any cost.</text>
 					<ship hostile="true"/>
@@ -5983,11 +5983,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -6088,11 +6088,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -6154,11 +6154,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -6211,11 +6211,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -6275,11 +6275,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -6342,11 +6342,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -6401,11 +6401,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -6563,11 +6563,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -6617,11 +6617,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -6671,11 +6671,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -6720,12 +6720,12 @@
 </eventList>
 
 <textList name="C_REBEL_CRUISER_FEDERATION_BASE_TEXT">
-	<text>You arrive in the sector to see a small outpost under fire by a forward cruiser of the Rebel fleet, identifying as RS "Coffee Break". This must be the Federation base you were told about! Fleeing seems to be a suitable option here... still, taking out an cruiser would surly throw the Rebel fleet into disarray.</text>
-	<text>You arrive in the sector to see a small outpost under fire by a forward cruiser of the Rebel fleet, identifying as RS "Correction Utility". This must be the Federation base you were told about! Fleeing seems to be a suitable option here... still, taking out an cruiser would surly throw the Rebel fleet into disarray.</text>
-	<text>You arrive in the sector to see a small outpost under fire by a forward cruiser of the Rebel fleet, identifying as RS "Educator". This must be the Federation base you were told about! Fleeing seems to be a suitable option here... still, taking out an cruiser would surly throw the Rebel fleet into disarray.</text>
-	<text>You arrive in the sector to see a small outpost under fire by a forward cruiser of the Rebel fleet, identifying as RS "Hello, My Name Is...". This must be the Federation base you were told about! Fleeing seems to be a suitable option here... still, taking out an cruiser would surly throw the Rebel fleet into disarray.</text>
-	<text>You arrive in the sector to see a small outpost under fire by a forward cruiser of the Rebel fleet, identifying as RS "Application Form". This must be the Federation base you were told about! Fleeing seems to be a suitable option here... still, taking out an cruiser would surly throw the Rebel fleet into disarray.</text>
-	<text>You arrive in the sector to see a small outpost under fire by a forward cruiser of the Rebel fleet, identifying as RS "Pillow Fight". This must be the Federation base you were told about! Fleeing seems to be a suitable option here... still, taking out an cruiser would surly throw the Rebel fleet into disarray.</text>
+	<text>You arrive in the sector to see a small outpost under fire by a forward cruiser of the Rebel fleet, identifying as RS "Coffee Break". This must be the Federation base you were told about! Fleeing seems to be a suitable option here... still, taking out an cruiser would surely throw the Rebel fleet into disarray.</text>
+	<text>You arrive in the sector to see a small outpost under fire by a forward cruiser of the Rebel fleet, identifying as RS "Correction Utility". This must be the Federation base you were told about! Fleeing seems to be a suitable option here... still, taking out an cruiser would surely throw the Rebel fleet into disarray.</text>
+	<text>You arrive in the sector to see a small outpost under fire by a forward cruiser of the Rebel fleet, identifying as RS "Educator". This must be the Federation base you were told about! Fleeing seems to be a suitable option here... still, taking out an cruiser would surely throw the Rebel fleet into disarray.</text>
+	<text>You arrive in the sector to see a small outpost under fire by a forward cruiser of the Rebel fleet, identifying as RS "Hello, My Name Is...". This must be the Federation base you were told about! Fleeing seems to be a suitable option here... still, taking out an cruiser would surely throw the Rebel fleet into disarray.</text>
+	<text>You arrive in the sector to see a small outpost under fire by a forward cruiser of the Rebel fleet, identifying as RS "Application Form". This must be the Federation base you were told about! Fleeing seems to be a suitable option here... still, taking out an cruiser would surely throw the Rebel fleet into disarray.</text>
+	<text>You arrive in the sector to see a small outpost under fire by a forward cruiser of the Rebel fleet, identifying as RS "Pillow Fight". This must be the Federation base you were told about! Fleeing seems to be a suitable option here... still, taking out an cruiser would surely throw the Rebel fleet into disarray.</text>
 </textList>
 
 <event name="DONOR_PLAGUE" unique="true">
@@ -6787,7 +6787,7 @@
 				<event load="C_PIRACY_RESULTS"/>
 			</choice>
 			<choice req="ROCK_ARMOR" hidden="true"> 
-				<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they were signing on for a moral joyride here.</text>
+				<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they weren't signing on for a moral joyride here.</text>
 				<event>
 					<text>Your crew indeed expected you might handle things harshly like this. The mission is paramount after all. The Federation has to be re-established!</text>
 					<ship hostile="true"/>
@@ -6796,11 +6796,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -6853,11 +6853,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -6910,11 +6910,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -7007,7 +7007,7 @@
 				<event load="C_PIRACY_RESULTS"/>
 			</choice>
 			<choice req="ROCK_ARMOR" hidden="true"> 
-				<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they were signing on for a moral joyride here.</text>
+				<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they weren't signing on for a moral joyride here.</text>
 				<event>
 					<text>Your crew indeed expected you might handle things harshly like this. The mission is paramount after all. The Federation has to be re-established!</text>
 					<ship hostile="true"/>
@@ -7016,11 +7016,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -7073,11 +7073,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -7130,11 +7130,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -7191,7 +7191,7 @@
 		<choice hidden="true">
 			<text>Release all the slaves.</text>
 			<event>
-				<text>The slaves stare at you with disbelieve when you inform them that they are free now. But then each of them displays great gratitude. The Engi thanks you personally: "Adherence to general system law by Federation personal: rare at current period." You drop them off at a nearby station.</text>
+				<text>The slaves stare at you with disbelieve when you inform them that they are free now, and each of them displays sincere gratitude. The Engi thanks you personally: "Adherence to general system law by Federation personal: rare at current period." You drop them off at a nearby station.</text>
 				<autoReward level="HIGH">standard</autoReward>
 			</event>
 		</choice>
@@ -7221,7 +7221,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>It appears the slaves did not survive the fighting, you find their burnt bodies in the hold, but before you strip the ship you hear faint noises in the walls.  You break off a latch and a slave falls out of a hidden compartment, coughing. Once recomposed the slave offers to join your crew.</text>
+		<text>It appears the slaves did not survive the fighting, you find their burnt bodies in the hold, but before you strip the ship you hear faint noises in the walls.  You break off a latch and a slave falls out of a hidden compartment, coughing. Once composed the slave offers to join your crew.</text>
 		<crewMember amount="1"/>  
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
@@ -7245,11 +7245,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -7294,7 +7294,7 @@
 <textList name="BS_EVENT_FED_TEXT">
 	<text>You are relieved to spot a station of the United Federation at this beacon. They message you: "Welcome to this re-purposed forward base station, in Rebel hand since three standard weeks. We are already running identification routi... wait a second... it's you!" This station must have been taken over by the Rebels, they cease communication and load weapons.</text>
 	<text>Immediately after arriving in the system you are hailed by a Rebel occupied station. "We know who you are and what you carry. You will have to get past us if you want to jump from this beacon. Except you won't."</text>
-	<text>This beacon lies in close proximity to what looks like a small Federation station, but IDs as a Rebel forward base. It appears to been taken over by the Rebel fleet and verifies this by locking weapons on your ship.</text>
+	<text>This beacon lies in close proximity to what looks like a small Federation station, but it IDs as a Rebel forward base. It appears to been taken over by the Rebel fleet and verifies this by locking weapons on your ship.</text>
 	<text>You get an automated message from a station right next to the beacon: "Greetings citizen/traveller/trader. This sector is now under Rebel control. Welcome your new supreme overlords by..." The station was scanning you while broadcasting and immediately ceases communication upon identifying your ship. The Rebels inside must be pretty excited now.</text>
 	<text>You receive hail from a small station: "In accordance to general system law we identify ourselves as Rebel occupied and no longer friendly. We have identified you as a prime target in return and will commence the attack now." These guys don't fool around.</text>
 </textList>
@@ -7308,11 +7308,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -7406,7 +7406,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>You get your ship into a boarding vector without incidents and proceed to dock.</text>
+		<text>You get your ship into a boarding vector without incident and proceed to dock.</text>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="BS_EVENT_FED_AUTO_DORMANT_RESULTS"/>
@@ -7420,7 +7420,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>As you get into docking vector you receive a stored message, encrypted with Federation codes: "Automated station black box log Fed-Pioneer SG-550. Position compromised. Minor effector attack registered. Life support system security breached. Casualties: 5. Evacuation order executed."</text>
+		<text>As you get into a docking vector you receive a stored message, encrypted with Federation codes: "Automated station black box log Fed-Pioneer SG-550. Position compromised. Minor effector attack registered. Life support system security breached. Casualties: 5. Evacuation order executed."</text>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="BS_EVENT_FED_AUTO_DORMANT_RESULTS"/>
@@ -7434,11 +7434,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -7485,7 +7485,7 @@
 	<choice req="AE_TELEPORTER_JAMMER" hidden="true">
 		<text>(Teleporter Disruptor) Don't let them teleport on board!</text>
 		<event>
-			<text>The Rebel don't teleport on board immediately, which gives you enough time to activate the disruption field. "OK, maybe resistance isn't that futile. We will get you soon. Count on it." You haste to get out of here before reinforcements arrive.</text>
+			<text>The Rebels don't teleport on board immediately, which gives you enough time to activate the disruption field. "OK, maybe resistance isn't that futile. We will get you soon. Count on it." You haste to get out of here before reinforcements arrive.</text>
 		</event>
 	</choice>
 	<choice>
@@ -7594,11 +7594,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -7660,23 +7660,23 @@
 	<text>You overhear a conversation on the neighbouring table "So... you lost your interceptor?" "Been drifting for two standard weeks in the escape pod" "What happened?" "Maul beam hit to the cockpit. Almost took my arms off." "Tough luck." "Tactics, they knew our maneuverability was our strongest advantage."</text>
 	<text>The canteen is pretty empty, but their sidewinder fang isn't that bad.</text>
 	<text>A refugee buys you a second drink. He escaped from a nearby pirate sector and is glad to have found a better life here. Pirates burned down his crops and his whole family was starving for months. Food rations must be in high demand there.</text>
-	<text>As you get your stuff you notice the bartenders tentacles are shaking. "Sorry Cap. Been working too long in the nebula. The chief tried to get as much pharmaceuticals as possible to keep us safe from the magnetic sickness. But it was we never had enough. At last I did not went insane like some of my friends."</text>
-	<text>As you get your stuff you notice the bartenders tentacles are shaking. "Sorry Cap. Been working to long in the nebula. The chief tried to get as much pharmaceuticals as possible to keep us safe from the magnetic sickness. But it was we never had enough. At last I did not went insane like some of my friends."</text>
+	<text>As you get your stuff you notice the bartenders tentacles are shaking. "Sorry Cap. Been working too long in the nebula. The chief tried to get as much pharmaceuticals as possible to keep us safe from the magnetic sickness. But it was we never had enough. At least I did not go insane like some of my friends."</text>
+	<text>As you get your stuff you notice the bartenders tentacles are shaking. "Sorry Cap. Been working too long in the nebula. The chief tried to get as much pharmaceuticals as possible to keep us safe from the magnetic sickness. But it was we never had enough. At least I did not go insane like some of my friends."</text>
 	<text>You are having a double nebula rake. Some union traders talk about the profit they made with exporting beacon parts to the expanding Mantis swarms.</text>
-	<text>You are having a slime cocktail. A young Clug compliments on your choice of beverage and you have a little chat. He claims that he is employed in ship construction in the home nebula. Work is slow, they never can get enough raw ore for hulls.</text>
+	<text>You are having a slime cocktail. A young Slug compliments on your choice of beverage and you have a little chat. He claims that he is employed in ship construction in the home nebula. Work is slow, they never can get enough raw ore for hulls.</text>
 	<text>The bartender is happy to meet a Federation person. She tells you her story: After slaving away in a coreworld factory she later made a fortune by exporting luxury goods to the Slug nebula and bought this old station to settle down for good.</text>
-	<text>As you sip on your alcohol infused pure water, you overhear a conversation at the bar: "Everything was fried, Cap. We ordered replacement electronics weeks ago, but the carrier did not arrive." "So you abandon the whole station?" "Life support was failing. Without spare electronics, stations are doomed in nebula."</text>
-	<text>You are having a Zoltan Peace Cocktail, it calms your nerves. A leaflet on the table explains that the trade union is looking for carriers to deliver beacon parts to uncharted nebulae. Their expansion plans are still pushed forward, even with the civil war going on.</text>
-	<text>The station has a good micro brewery, you take the space-lager. Most unusually, a Rock sits on the bar, emptying bottles of hard spirits. He addresses you: "Hey you! Sell me industrial machines!" You are slightly startled and explain that you don't have any. The Rock nods. You can't tell if he is drunk or just not sociable at all.</text>
+	<text>As you sip on your alcohol infused pure water, you overhear a conversation at the bar: "Everything was fried, Cap. We ordered replacement electronics weeks ago, but the carrier did not arrive." "So you abandon the whole station?" "Life support was failing. Without spare electronics, stations are doomed in a nebula."</text>
+	<text>You are having a Zoltan Peace Cocktail, it calms your nerves. A leaflet on the table explains that the trade union is looking for carriers to deliver beacon parts to uncharted nebulae. Their expansion plans are still pushing forward, even with the civil war going on.</text>
+	<text>The station has a good micro brewery, you take the space-lager. Most unusually, a Rock sits at the bar, emptying bottles of hard spirits. He addresses you: "Hey you! Sell me industrial machines!" You are slightly startled and explain that you don't have any. The Rock nods. You can't tell if he is drunk or just not sociable at all.</text>
 	<text>You smoke a hydrogen cooled water-pipe, sun-storm flavour, and then check the blackboard. Several refuges from near civilian sectors offer good money for shield components. Everyone wants to protect himself better these days.</text>
-	<text>Some pirates brag loudly about their latest coup: "... and what do we find in the crates? Stone-plates, actual Rock literature!" "No way!" "What a letdown." "Better luck next time." "You don't get it do you? I told you I know this history guys in Zoltan space. They're gonna pay a fortune, you'll see!" "Yeah, sure..."</text>
+	<text>Some pirates brag loudly about their latest coup: "... and what do we find in the crates? Stone-plates, actual Rock literature!" "No way!" "What a letdown." "Better luck next time." "You don't get it do you? I told you I know these history guys in Zoltan space. They're gonna pay a fortune, you'll see!" "Yeah, sure..."</text>
 	<text>You get a creme bowl and study the propaganda leaflets the Rebels have distributed here. They call on all freedom loving people to support their campaign by joining their forces or at last by donating engine components to their fleet.</text>
-	<text>You are having an hydrogen-iced fruit cocktail. A Zoltan preacher is on space TV. He offers salvation for all peace loving people and explains in length the Zoltans initiative to pacify the galaxy by buying ship weapon components and small arms at subsidized prices.</text>
+	<text>You are having an hydrogen-iced fruit cocktail. A Zoltan preacher is on space TV. He offers salvation for all peace loving people and explains in length the Zoltan's initiative to pacify the galaxy by buying ship weapon components and small arms at subsidized prices.</text>
 	<text>The bartender seems to be intoxicated by some substances. He explains they used these hallucinogens all the time on his old pirate hideout, but now he is almost clean. "Some Slug trader came each cycle. The stuff costs a fortune, but we would pay anything, Cap. Good times... till this Fed cruiser blew the place up."</text>
 	<text>The place looks much less rough inside than on the outside. Modern art-pieces are arranged in the canteen. The Zoltan bartender notices you interest in her collection. "I got bored by the homeworlds, so I came here and show these works to common people. Back home this is worth a fortune, but I feel only here beings truly appreciate it."</text>
 	<text>Some union traders hang out on the bar. "Sister, trading with these things is sooo tedious. I got me this new translator, but I still don't get what they want most of the time." "Tell me about it. You want to hear what problems I got on my end? Do you even know how difficult is to get this stuff out of Mantis territory?"</text>
 	<text>Some drunken cowboy-type ship Captain tells you his story, although you did not ask at all: "It's not the same like in the old colony days... Trading live animals, you know, a hangar full of cattle? Now it's only tube bred livestock from the Slug nebula. And I sell it to these robots, don't wanna know what they do with it..."</text>
-	<text>While you sip your galaxy import you brows through an old Federation fleet manual, lying beer-soaked on the bar. You remember the lesson on interceptor defense quite well from the academy. The chapter explains in detail the advantage of burst firing missile weapons against this ship type.</text>
+	<text>While you sip your galaxy import you browse through an old Federation fleet manual, lying beer-soaked on the bar. You remember the lesson on interceptor defense quite well from the academy. The chapter explains in detail the advantage of burst firing missile weapons against this ship type.</text>
 	<text>While you wait for your ration-smoothie, a union trader tries to coax you into buying his load of compressed nebula gas. "Okay, okay, who am I trying to fool here. We both know this stuff is worth almost nothing. I guess I have to journey to Rock territory again then I guess..."</text>
 </textList>
 
@@ -7750,11 +7750,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -7813,11 +7813,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -7862,7 +7862,7 @@
 </eventList>
 <textList name="BS_EVENT_PIRATE_BLACKMARKET_ASTEROID_TEXT">
 	<text>You discover a hidden station, build within the largest asteroids of the field. You are informed that this place is open for everyone, this might be a good place for a short rest.</text>
-	<text>It turns out that one of the bigger asteroids has been mined hollow and then turned into a space habitat. The commander openly admits that he is a federation deserter. He asks if you still believe in your missions and offers you to stay. You politely decline. You can not give up now.</text>
+	<text>It turns out that one of the bigger asteroids has been mined hollow and then turned into a space habitat. The commander openly admits that he is a federation deserter. He asks if you still believe in your missions and invites you to stay. You politely decline. You can not give up now.</text>
 	<text>Entire space habitats have been taken over by smugglers and want-to-be-dashing-criminals now, knowing that their less-than-legal services are in demand during this period of unrest. Turns out that one of these black-market hubs is hidden out here, encased within a huge asteroid.</text>
 	<text>As you search the field a station suddenly hails you: "Greetings Captain! What you doing out here? We can offer some supplies, but we are constantly in need for scrap to patch up this rock we live in...</text>
 </textList>
@@ -7880,7 +7880,7 @@
 </event>
 <eventList name="CE_DINER_LIST">
 	<event>
-		<text>A sleek looking type in an expensive suit approaches you while you sit over your distasteful space-fries. "Greetings Captain. I understand you command this vessel docking out there? My name is Mr. Johnson. I represent the Waypoint-Junta corporation. I might have a little freelance work for you."</text>
+		<text>A sleek looking type in an expensive suit approaches you while you sit over your tasteless space-fries. "Greetings Captain. I understand you command that vessel docked out there? My name is Mr. Johnson. I represent the Waypoint-Junta corporation. I might have a little freelance work for you."</text>
 		<choice hidden="true">
 			<text>Listen.</text>
 			<event load="CE_DINER_JUNTA"/>		
@@ -7894,7 +7894,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>Sipping your unfair traded interstellar coffee brew, you overhear an conversation on the neighbouring table: "A cruiser is waiting at a nearby beacon." "We appreciate it." "You will hand over your ship and submit to processing." "We understand." "As deserters you will not retain your Federation rank in the Rebel fleet, but we will find a suitable position for you." "We... understand."</text>
+		<text>While sipping your unfair traded interstellar coffee brew, you overhear an conversation on the neighbouring table: "A cruiser is waiting at a nearby beacon." "We appreciate it." "You will hand over your ship and submit to processing." "We understand." "As deserters you will not retain your Federation rank in the Rebel fleet, but we will find a suitable position for you." "We... understand."</text>
 		<choice hidden="true">
 			<text>Make sure the Rebel agents don't notice you.</text>
 			<event>
@@ -7941,11 +7941,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -7996,11 +7996,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -8051,11 +8051,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -8108,7 +8108,7 @@
 		<augment name="TE_GOODS_MANTIS_WEAPONS"/>
 	</event>
 	<event>
-		<text>Your crew loads the cargo, which consist of a few ominously labeled black tanks. "Voila! This stuff isn't exactly legal. Some messed up outlaws in the fringe worlds are most likely to be good buyers. I hope they all brain-choke on it. Was a pleasure to be working with you Captain. Take care."</text>
+		<text>Your crew loads the cargo, which consist of a few ominously labelled black tanks. "Voila! This stuff isn't exactly legal. Some messed up outlaws in the fringe worlds are most likely to be good buyers. I hope they all brain-choke on it. Was a pleasure to be working with you Captain. Take care."</text>
 		<augment name="TE_GOODS_SLUG_DRUGS"/>
 	</event>
 	<event>
@@ -8130,11 +8130,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -8258,11 +8258,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -8332,11 +8332,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -8399,11 +8399,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -8862,7 +8862,7 @@
 	<text>This sparsely populated production sector is of little strategic value. It is unlikely that you will run in a lot of trouble here. Maybe you can even buy some supplies for your journey or strike a good trade deal.</text>
 </textList>
 
-<!-- hyperspace variant, one more thing that didnt work out... -->
+<!-- hyperspace variant, one more thing that didn't work out... -->
 
 
 <!--
@@ -9529,11 +9529,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -9584,11 +9584,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -9639,11 +9639,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -9694,11 +9694,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -9749,11 +9749,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -9804,11 +9804,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -9859,11 +9859,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -9914,11 +9914,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -9969,11 +9969,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -10024,11 +10024,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -10079,11 +10079,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -10139,11 +10139,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -10201,11 +10201,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -10263,11 +10263,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -10396,11 +10396,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -10455,11 +10455,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -10516,11 +10516,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -10653,7 +10653,7 @@
 			<event load="DEAD_CREW_PIRACY_CIVILIAN_RESULTS"/>
 		</choice>
 		<choice req="ROCK_ARMOR" hidden="true"> 
-			<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they were signing on for a moral joyride here.</text>
+			<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they weren't signing on for a moral joyride here.</text>
 			<event load="DEAD_CREW_PIRACY_CIVILIAN_RESULTS_RISKLESS"/>
 		</choice>
 		<choice req="CREW_STIMS" hidden="true"> 
@@ -10698,7 +10698,7 @@
 		<autoReward level="HIGH">fuel</autoReward>
 	</event>
 	<event>
-		<text>You keep telling yourself this was necessary for the mission, but can't help but feel guilty. The looks your crew give you don't help either. You are able to take the fuel out of the ships storage. You also take all the scrap you can manage and request a report on the ships cargo.</text>
+		<text>You keep telling yourself this was necessary for the mission, but can't help but feel guilty. The looks your crew give you don't help either. You are able to take the fuel out of the ships storage. You also take all the scrap you can manage and request a report on the ship's cargo.</text>
 		<autoReward level="LOW">fuel</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -10742,7 +10742,7 @@
 		<autoReward level="HIGH">fuel</autoReward>
 	</event>
 	<event>
-		<text>Your crew does not question your course of action. You are able to take the fuel out of the ships storage. You also take all the scrap you can manage and request a report on the ships cargo.</text>
+		<text>Your crew does not question your course of action. You are able to take the fuel out of the ships storage. You also take all the scrap you can manage and request a report on the ship's cargo.</text>
 		<autoReward level="LOW">fuel</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -10764,7 +10764,7 @@
 			<event load="DESTROYED_PIRACY_CIVILIAN_RESULTS"/>
 		</choice>
 		<choice req="ROCK_ARMOR" hidden="true"> 
-			<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they were signing on for a moral joyride here.</text>
+			<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they weren't signing on for a moral joyride here.</text>
 			<event load="DESTROYED_PIRACY_CIVILIAN_RESULTS_RISKLESS"/>
 		</choice>
 		<choice req="CREW_STIMS" hidden="true"> 
@@ -10781,7 +10781,7 @@
 
 <eventList name="DESTROYED_PIRACY_CIVILIAN_RESULTS_RISKLESS">
 	<event>
-		<text>Your crew got used to your hard style of leadership. Scans indicate some of the ships cargo is still intact. You order an investigation.</text>
+		<text>Your crew got used to your hard style of leadership. Scans indicate some of the ship's cargo is still intact. You order an investigation.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -10804,7 +10804,7 @@
 
 <eventList name="DESTROYED_PIRACY_CIVILIAN_RESULTS">
 	<event>
-		<text>You will use the scrap for good, but can't help feeling like you lost your way. Crew morale is as low as it can get. Scans indicate some of the ships cargo is still intact. You order an investigation.</text>
+		<text>You will use the scrap for good, but can't help feeling like you lost your way. Crew morale is as low as it can get. Scans indicate some of the ship's cargo is still intact. You order an investigation.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -10862,11 +10862,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -10916,11 +10916,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -10970,11 +10970,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -11038,11 +11038,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -11110,11 +11110,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -11250,7 +11250,7 @@
 			<event load="C_PIRACY_SUCCESS_RESULTS"/>
 		</choice>
 		<choice req="ROCK_ARMOR" hidden="true"> 
-			<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they were signing on for a moral joyride here.</text>
+			<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they weren't signing on for a moral joyride here.</text>
 			<event/>
 		</choice>
 		<choice req="CREW_STIMS" hidden="true"> 
@@ -11340,11 +11340,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -11399,11 +11399,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -11455,11 +11455,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -11517,11 +11517,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -11579,11 +11579,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -11636,11 +11636,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -11731,11 +11731,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -11796,11 +11796,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -11865,11 +11865,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -11928,11 +11928,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -11998,11 +11998,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -12061,11 +12061,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -12131,11 +12131,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -12195,11 +12195,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -12264,11 +12264,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -12327,11 +12327,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -12393,7 +12393,7 @@
 				<event load="C_PIRACY_RESULTS"/>
 			</choice>
 			<choice req="ROCK_ARMOR" hidden="true"> 
-				<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they were signing on for a moral joyride here.</text>
+				<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they weren't signing on for a moral joyride here.</text>
 				<event>
 					<text>Your crew indeed expected you might handle things harshly like this. The mission is paramount after all. The Federation has to be re-established!</text>
 					<ship hostile="true"/>
@@ -12402,11 +12402,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -12459,11 +12459,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -12516,11 +12516,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -12757,11 +12757,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -12817,11 +12817,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -12966,7 +12966,7 @@
 				<event load="C_PIRACY_RESULTS"/>
 			</choice>
 			<choice req="ROCK_ARMOR" hidden="true"> 
-				<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they were signing on for a moral joyride here.</text>
+				<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they weren't signing on for a moral joyride here.</text>
 				<event>
 					<text>Your crew indeed expected you might handle things harshly like this. The mission is paramount after all. The Federation has to be re-established!</text>
 					<ship hostile="true"/>
@@ -12975,11 +12975,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -13032,11 +13032,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -13089,11 +13089,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -13251,7 +13251,7 @@
 				<event load="C_PIRACY_RESULTS"/>
 			</choice>
 			<choice req="ROCK_ARMOR" hidden="true"> 
-				<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they were signing on for a moral joyride here.</text>
+				<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they weren't signing on for a moral joyride here.</text>
 				<event>
 					<text>Your crew indeed expected you might handle things harshly like this. The mission is paramount after all. The Federation has to be re-established!</text>
 					<ship hostile="true"/>
@@ -13260,11 +13260,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -13317,11 +13317,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -13374,11 +13374,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -13566,11 +13566,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -13913,31 +13913,31 @@
 
 <eventList name="TE_LOOT_GOODS_CIVILIAN">
 	<event>
-		<text>The ships cargo consisted of some common goods. You prepare to take the containers on board.</text>
+		<text>the ship's cargo consisted of some common goods. You prepare to take the containers on board.</text>
 		<augment name="TE_GOODS_CIVILIAN_CONSUMER"/>
 	</event>
 	<event>
-		<text>The ships cargo consisted of some common goods. You prepare to take the containers on board.</text>
+		<text>the ship's cargo consisted of some common goods. You prepare to take the containers on board.</text>
 		<augment name="TE_GOODS_CIVILIAN_CONSUMER"/>
 	</event>
 	<event>
-		<text>The ships cargo consisted of some common goods. You prepare to take the containers on board.</text>
+		<text>the ship's cargo consisted of some common goods. You prepare to take the containers on board.</text>
 		<augment name="TE_GOODS_CIVILIAN_CONSUMER"/>
 	</event>
 	<event>
-		<text>The ships cargo consisted mainly of simple industrial equipment. Your crew loads the machines into the cargo holds.</text>
+		<text>the ship's cargo consisted mainly of simple industrial equipment. Your crew loads the machines into the cargo holds.</text>
 		<augment name="TE_GOODS_ENGI_MACHINES"/>
 	</event>
 	<event>
-		<text>The ships cargo consisted mainly of simple industrial equipment. Your crew loads the machines into the cargo holds.</text>
+		<text>the ship's cargo consisted mainly of simple industrial equipment. Your crew loads the machines into the cargo holds.</text>
 		<augment name="TE_GOODS_ENGI_MACHINES"/>
 	</event>
 	<event>
-		<text>The ships cargo consisted mainly of food supplies for distant colonies. Your crew loads the shipment into the cargo holds.</text>
+		<text>the ship's cargo consisted mainly of food supplies for distant colonies. Your crew loads the shipment into the cargo holds.</text>
 		<augment name="TE_GOODS_CIVILIAN_FOOD"/>
 	</event>
 	<event>
-		<text>The ships cargo consisted mainly of food supplies for distant colonies. Your crew loads the shipment into the cargo holds.</text>
+		<text>the ship's cargo consisted mainly of food supplies for distant colonies. Your crew loads the shipment into the cargo holds.</text>
 		<augment name="TE_GOODS_CIVILIAN_FOOD"/>
 	</event>
 	<event>
@@ -13956,11 +13956,11 @@
 
 <eventList name="TE_LOOT_GOODS_DEAD_CREW">
 	<event>
-		<text>The ships cargo consisted of some common goods. You prepare to take the containers on board.</text>
+		<text>the ship's cargo consisted of some common goods. You prepare to take the containers on board.</text>
 		<augment name="TE_GOODS_CIVILIAN_CONSUMER"/>
 	</event>
 	<event>
-		<text>The ships cargo consisted mainly of simple industrial equipment. Your crew loads the machines into the cargo holds.</text>
+		<text>the ship's cargo consisted mainly of simple industrial equipment. Your crew loads the machines into the cargo holds.</text>
 		<augment name="TE_GOODS_ENGI_MACHINES"/>
 	</event>
 	<event>
@@ -13968,7 +13968,7 @@
 		<augment name="TE_GOODS_ROCK_ORE"/>
 	</event>
 	<event>
-		<text>The ships freight consisted mainly of food supplies for distant colonies. Your crew loads the supplies into the cargo holds.</text>
+		<text>the ship's freight consisted mainly of food supplies for distant colonies. Your crew loads the supplies into the cargo holds.</text>
 		<augment name="TE_GOODS_CIVILIAN_FOOD"/>
 	</event>
 </eventList>
@@ -13986,11 +13986,11 @@
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -14728,7 +14728,7 @@ IDEAS
 	<choice req="sensors" lvl="2" hidden="true">
 		<text>(Advanced Sensors) Something is out there. Run another scan!</text>
 		<event>
-			<text>Your scanners discover nothing out of the ordinary. But before you finished to charge you FTL an automated Rebel infiltrator suddenly decloaks a few clicks away. The AI ship jumps away immediately. It must have been following you and will surly inform the Rebel fleet of your position.</text>
+			<text>Your scanners discover nothing out of the ordinary. But before you finished to charge you FTL an automated Rebel infiltrator suddenly decloaks a few clicks away. The AI ship jumps away immediately. It must have been following you and will surely inform the Rebel fleet of your position.</text>
 		</event>
 	</choice>
 	<choice req="sensors" lvl="3" hidden="true">
@@ -14742,11 +14742,11 @@ IDEAS
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -14804,11 +14804,11 @@ IDEAS
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -14869,11 +14869,11 @@ IDEAS
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -14942,7 +14942,7 @@ IDEAS
 				<event load="C_PIRACY_RESULTS"/>
 			</choice>
 			<choice req="ROCK_ARMOR" hidden="true"> 
-				<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they were signing on for a moral joyride here.</text>
+				<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they weren't signing on for a moral joyride here.</text>
 				<event>
 					<text>Your crew indeed expected you might handle things harshly like this. The mission is paramount after all. The Federation has to be re-established!</text>
 					<ship hostile="true"/>
@@ -14951,11 +14951,11 @@ IDEAS
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -15008,11 +15008,11 @@ IDEAS
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -15065,11 +15065,11 @@ IDEAS
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -15234,7 +15234,7 @@ IDEAS
 			<event load="DESTROYED_PIRACY_CIVILIAN_RESULTS_STATION"/>
 		</choice>
 		<choice req="ROCK_ARMOR" hidden="true"> 
-			<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they were signing on for a moral joyride here.</text>
+			<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they weren't signing on for a moral joyride here.</text>
 			<event load="DESTROYED_PIRACY_CIVILIAN_RESULTS_RISKLESS_STATION"/>
 		</choice>
 		<choice req="CREW_STIMS" hidden="true"> 
@@ -15306,7 +15306,7 @@ IDEAS
 
 <eventList name="DESTROYED_PIRACY_CIVILIAN_RESULTS_RISKLESS_STATION">
 	<event>
-		<text>The crew isn't questioning your course of action. Scans indicate some of the ships cargo is still intact. You order an investigation.</text>
+		<text>The crew isn't questioning your course of action. Scans indicate some of the ship's cargo is still intact. You order an investigation.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -15340,7 +15340,7 @@ IDEAS
 			<event load="DEAD_CREW_PIRACY_CIVILIAN_RESULTS_STATION"/>
 		</choice>
 		<choice req="ROCK_ARMOR" hidden="true"> 
-			<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they were signing on for a moral joyride here.</text>
+			<text>(Rock Ship) You command a vessel of the brutal Rock people. Your crew knew that they weren't signing on for a moral joyride here.</text>
 			<event load="DEAD_CREW_PIRACY_CIVILIAN_RESULTS_RISKLESS_STATION"/>
 		</choice>
 		<choice req="CREW_STIMS" hidden="true"> 
@@ -15393,7 +15393,7 @@ IDEAS
 		<autoReward level="MED">scrap_only</autoReward>
 	</event>
 	<event>
-		<text>You keep telling yourself this was necessary for the mission, but can't help but feel guilty. The looks your crew give you don't help either. The depot was fit for refuelling ships. You take the fuel out of the storage. You also take all the scrap you can manage and request a report on the ships cargo.</text>
+		<text>You keep telling yourself this was necessary for the mission, but can't help but feel guilty. The looks your crew give you don't help either. The depot was fit for refuelling ships. You take the fuel out of the storage. You also take all the scrap you can manage and request a report on the ship's cargo.</text>
 		<autoReward level="LOW">fuel</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -15441,7 +15441,7 @@ IDEAS
 		<autoReward level="HIGH">fuel</autoReward>
 	</event>
 	<event>
-		<text>Your crew does not question your course of action. You are able to take the fuel out of the ships storage. You also take all the scrap you can manage and request a report on the ships cargo.</text>
+		<text>Your crew does not question your course of action. You are able to take the fuel out of the ships storage. You also take all the scrap you can manage and request a report on the ship's cargo.</text>
 		<autoReward level="LOW">fuel</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -15519,11 +15519,11 @@ IDEAS
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -15583,11 +15583,11 @@ IDEAS
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -15652,11 +15652,11 @@ IDEAS
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -15778,11 +15778,11 @@ IDEAS
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -15865,11 +15865,11 @@ IDEAS
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -16021,11 +16021,11 @@ IDEAS
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -16087,11 +16087,11 @@ IDEAS
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
@@ -16159,11 +16159,11 @@ IDEAS
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
 		</choice>	
 		<choice req="AE_WEAPON_JAMMER" hidden="true">
-			<text>(Targeting Jammer) Jam the enemy weapon targeting.</text>
+			<text>(Targeting Jammer) Jam the enemy's weapon targeting.</text>
 			<event load="CE_WEAPON_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_DRONE_JAMMER" hidden="true">
-			<text>(Drone Uplink Jammer) Jam the enemy drone communication.</text>
+			<text>(Drone Uplink Jammer) Jam the enemy's drone communication.</text>
 			<event load="CE_DRONE_JAMMING_RESULTS_1"/>
 		</choice>
 		<choice req="AE_TELEPORTER_JAMMER" hidden="true"> 
