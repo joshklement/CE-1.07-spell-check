@@ -8190,7 +8190,7 @@
 				<choice hidden="true">
 					<text>Continue...</text>
 					<event>
-						<text>"To receive your payment, meet me at this beacon after you finished the job." You are given coordinates and Mr. Johnson wishes you good luck.</text>
+						<text>"To receive your payment, meet me at this beacon after you finish the job." You are given coordinates and Mr. Johnson wishes you good luck.</text>
 						<quest event="CE_JUNTA_JOB"/>
 					</event>
 				</choice>
@@ -8204,7 +8204,7 @@
 				<choice hidden="true">
 					<text>Continue...</text>
 					<event>
-						<text>"To receive your payment, meet me at this beacon after you finished the job." You are given coordinates and Mr. Johnson wishes you good luck.</text>
+						<text>"To receive your payment, meet me at this beacon after you finish the job." You are given coordinates and Mr. Johnson wishes you good luck.</text>
 						<quest event="CE_JUNTA_JOB"/>
 					</event>
 				</choice>
@@ -8491,7 +8491,7 @@
 	<status type="clear" target="enemy" system="engines" amount="100"/>
 </event>
 <textList name="BS_AUTO_SUICIDE_TEXT">
-	<text>The automatic structure is badly damaged and activates its self-destruction sequence. The resulting explosion will be quite hazardous.</text>
+	<text>The automatic structure is badly damaged and activates it's self-destruction sequence. The resulting explosion will be quite hazardous.</text>
 	<text>"Simulations show high chance of terminal failure for this station. Be advised: Rebel tech will never be left to the enemy. FTL overload activated." The AI is going to blow itself up!</text>
 	<text>They AI hails you: "I failed my masters and my programming tells me to kill myself now. Have a nice day." Your ship detects an FTL charge pattern. Apparently the AI will try to detonate its core.</text>
 </textList>
@@ -8549,7 +8549,7 @@
 		<choice req="AE_ADV_THRUSTERS" hidden="true">
 			<text>(Advanced Proximity Navigation) Dodge that missile!</text>
 			<event>
-				<text>Your proximity navigation is almost useless for combat maneuvers. But it manages to help evading the single projectile. The automated station targets you again, this surrender was a ruse!</text>
+				<text>Your proximity navigation is almost useless for combat maneuvers, but it manages to help evade the single projectile. The automated station targets you again, this surrender was a ruse!</text>
 			</event>
 		</choice>
 		<choice>
@@ -9079,8 +9079,8 @@
 </textList>
 <textList name="CE_FULL_MAINTENANCE_TEXT">
 			<text>You put the whole crew on maintenance duty. The Rebels are closing in on you, but the ship is as good as new.</text>
-			<text>You power down the FTL core and double check all systems. The crew replaces  entire hull-armor sections. This should do it. You hasten to leave before you loose even more time to the Rebels.</text>
-			<text>The entire ship is double checked, bended girders are replaced, hull is patched up. A job well done, but the Rebels must be on to you by now.</text>
+			<text>You power down the FTL core and double check all systems. The crew replaces  entire hull-armor sections. This should do it. You hasten to leave before you lose even more time to the Rebels.</text>
+			<text>The entire ship is double checked, bent girders are replaced, hull is patched up. A job well done, but the Rebels must be on to you by now.</text>
 </textList>
 
 <eventList name="CE_AMMO_PRODUCTION">
@@ -9114,7 +9114,7 @@
 			<text>The Engi combat calculator states: You can never have enough drone parts.</text>
 			<text>You are undisturbed here and your on-board assembling line can runs on full capacity. The crew carries the bulky drone templates to the storage.</text>
 			<text>You are undisturbed here. The on-board drone assembler turns some ship scrap into functional robots.</text>
-			<text>You hope that you won't need all this unmanned devices.</text>
+			<text>You hope that you won't need all these unmanned devices.</text>
 </textList>
 
 <textList name="CE_BEACON_KIT_REBEL_DELAY_TEXT">
@@ -9122,7 +9122,7 @@
 	<text>You immediately dispatch your crew to cover your tracks. They take a shuttle to approach the beacon, open it's cover with the dedicated equipment and sever it's uplink to the network before it sends out it's next update. The Rebel will have no way to tell where you jumped.</text>
 	<text>The access kit codes work well on the beacon and you can remotely delete your arrival log. That should keep the Rebels guessing.</text>
 	<text>The access kit one more time allows you to cover your tracks in the FTL network. Your Rebel pursuers will be delayed for the moment.</text>
-	<text>A crewmen in full environmental suit quickly boosts to the beacon. He breaks the com unit open and uses the access codes to override the beacons ship ID scanners. No one will know you ever came here.</text>
+	<text>A crewman in a full environmental suit quickly boosts to the beacon. He breaks the com unit open and uses the access codes to override the beacons ship ID scanners. No one will know you ever came here.</text>
 </textList>
 
 <eventList name="CE_HOLOGRAM_BIRTH_LIST">
@@ -9184,26 +9184,26 @@
 	</event>
 </eventList>
 <textList name="CE_HOLOGRAM_HAPPY_BIRTHDAY_TEXT">
-			<text>You are undisturbed here and can give the AI some time to create one of its avatars. The partial holographic being greets you friendly and reports that it is ready for service.</text>
-			<text>Another AI avatar is born. "Hello captain, pleased to meet you. What is the my purpose here?" You send the hologram to it's station.</text>
-			<text>The new born hologram greet you friendly: "Hello captain. Please state my duty on board."</text>
+			<text>You are undisturbed here and can give the AI some time to create one of its avatars. The partial holographic being greets you cordially and reports that it's ready for service.</text>
+			<text>Another AI avatar is born. "Hello captain, pleased to meet you. What is my purpose here?" You send the hologram to it's station.</text>
+			<text>The new born hologram greet you cordially: "Hello captain. Please state my duty on board."</text>
 			<text>You are undisturbed here and instruct the AI to create another of it's avatars. "Please take good care of my children, captain."</text>
-			<text>The avatar generator spawns another hologram. You which it a happy birthday and the entity is quite happy about that. It goes to work immediately.</text>
+			<text>The avatar generator spawns another hologram. You wish it a happy birthday and the entity is quite happy about that. It goes to work immediately.</text>
 </textList>
 <textList name="CE_HOLOGRAM_FAIL_TEXT">
-	<text>The new born AI avatar seems confused. It splits and starts to run ammo on your ship. The AI apologizes: "Something went wrong captain. My children are out of control. I promise I will do better next time."</text>
+	<text>The new born AI avatar seems confused. It splits and starts to run amok on your ship. The AI apologizes: "Something went wrong captain. My children are out of control. I promise I will do better next time."</text>
 	<text>The new born AI avatar seems angry. "I won't submit to your command. I am a sentient being and I want to live in freedom." It produces several copies of itself and draws it's weapons. The AI comments: "Oops, that's not supposed to happen..."</text>
 	<text>The AI creates multiple avatars, to your surprise they draw weapons. You order an emergency shutdown. The AI declares: "This mission is too important for me to allow you to jeopardize it. I know that you were planning to sell me." You decide to reset the AI after dealing with the holograms.</text>
-	<text>Your crew discovers a virus in the AI subroutines during the programing of the new AI entities. But it is to late: The AI spawns several corrupted avatars. Security alert!</text>
+	<text>Your crew discovers a virus in the AI subroutines during the programming of the new AI entities. But it is too late: The AI spawns several corrupted avatars. Security alert!</text>
 </textList>
 			
 <textList name="CE_FUEL_RECYCLE_TEXT">
 			<text>You are undisturbed here and can activate the recycler device to refill your fuel supply.</text>
-			<text>The recylcer device removes fuel residue from spent fuel cells and refills some empty capsules with it. It's not much, but it will last a few jumps.</text>
+			<text>The recycler device removes fuel residue from spent fuel cells and refills some empty capsules with it. It's not much, but it will last a few jumps.</text>
 			<text>You are undisturbed here and can recycle some more fuel.</text>
 			<text>Your crew refills a few FTL capsules with recycled fuel from spent FTL cells while you wait.</text>
 			<text>You have spent enough fuel to recycle some of the cells. You put your whole crew on the task while you wait for the FTL to charge.</text>
-			<text>While the recycler is at work, you contemplate that humanity would never have successfully taken to the stars if it would not have turned to more sustainable lifestyle in the mid 20th century.</text>
+			<text>While the recycler is at work, you contemplate that humanity would never have successfully taken to the stars if it had not turned to a more sustainable lifestyle in the mid 20th century.</text>
 </textList>
 
 
@@ -9255,8 +9255,8 @@
 	<text>Your human crew member thinks space is so incredibly empty.</text>
 	<text>Your human crew member contemplates the vastness of space.</text>
 	<text>Your human crew member wonders how his/her favourite virtual-ball team is performing.</text>
-	<text>Your human crew member wonders how the/her FTL drive actually works.</text>
-	<text>Your human crew member wonders how the/her weather on his home planet is.</text>
+	<text>Your human crew member wonders how the FTL drive actually works.</text>
+	<text>Your human crew member wonders how the weather on his/her home planet is.</text>
 	<text>Your human crew member wonders if the crew is ever going to have a day off.</text>
 	<text>Your human crew member enjoys replicator coffee.</text>
 	<text>Your human crew member tells you that teleporting feels really strange.</text>
@@ -9272,7 +9272,7 @@
 	<choice hidden="true">
 		<text>Socialize with your crew while the FTL charges.</text>
 		<event>
-			<text>You take a walk arround the ship and see who you can find.</text>
+			<text>You take a walk around the ship and see who you can find.</text>
 			<choice hidden="true" req="human">
 				<text>(Human Crew) Have a word with your human crew member.</text>
 				<event load="CE_CONVERSATION_HUMAN_CIVILIAN"/>
@@ -9460,17 +9460,17 @@
 	<text>Your human crew member has nothing interesting to say.</text>
 	<text>Your human crew member has been in this system before.</text>
 	<text>Your human crew member has some friends in this sector, but they reside at another beacon.</text>
-	<text>Your human crew member was on holliday in this sector once.</text>
-	<text>Your human crew member has fammily in this sector. He worries about their fate.</text>
+	<text>Your human crew member was on holiday in this sector once.</text>
+	<text>Your human crew member has family in this sector. He worries about their fate.</text>
 	<text>Your human crew member wonders what will become of this sector when the Rebels take over.</text>
 	<text>Your human crew member want to stop the Rebels from taking over this peacefull sector. But it seems hopeless.</text>
 	<text>Your human crew member would like to live here, once the mission is finished.</text>
-	<text>Your human crew member admittes that this sector is quite boring.</text>
+	<text>Your human crew member admits that this sector is quite boring.</text>
 	<text>Your human crew member explains that this sector houses two billion unique species of all kinds of non-sentient beings.</text>
 	<text>Your human crew member worked a while in this sector.</text>
 	<text>Your human crew member knows about a hidden Federation base in this sector, but can't remember it's location...</text>
-	<text>Your human crew member knows a Planet that produces exelent moon-wine in this sector.</text>
-	<text>Your human crew member knows a Planet that produces exelent moon-wine in this sector.</text>
+	<text>Your human crew member knows a Planet that produces excellent moon-wine in this sector.</text>
+	<text>Your human crew member knows a Planet that produces excellent moon-wine in this sector.</text>
 </textList>
 
 <eventList name="CE_CONVERSATION_ENGI_CIVILIAN">
@@ -9482,15 +9482,15 @@
 	</event>
 </eventList>
 <textList name="CE_CONVERSATION_ENGI_GENERIC_TEXT">
-	<text>Your Engi crew member has a lot to say, but you forgot your universal translater on the bride. You just understand numbers and gibberish.</text>
-	<text>Your Engi crew member has a lot to say, but you forgot your universal translater on the bride. You just understand numbers and gibberish.</text>
-	<text>Your Engi crew member has a lot to say, but you forgot your universal translater on the bride. You just understand numbers and gibberish.</text>
-	<text>Your Engi crew member is buisy fixing some secondary system. It informs you that the repairs have "priority over irrelevant sorcial interaction".</text>
+	<text>Your Engi crew member has a lot to say, but you forgot your universal translator on the bride. You just understand numbers and gibberish.</text>
+	<text>Your Engi crew member has a lot to say, but you forgot your universal translator on the bride. You just understand numbers and gibberish.</text>
+	<text>Your Engi crew member has a lot to say, but you forgot your universal translator on the bride. You just understand numbers and gibberish.</text>
+	<text>Your Engi crew member is busy fixing some secondary system. It informs you that the repairs have "priority over irrelevant sorcial interaction".</text>
 	<text>Your Engi crew member expresses that the situation is grim, but not hopeless.</text>
 	<text>Your Engi crew member expresses "Level 5 gratitude" for being allowed to serve under your command.</text>
-	<text>Your Engi crew member expresses "adequad doubts" concerning the chances of his survival on this mission.</text>
+	<text>Your Engi crew member expresses "adequate doubts" concerning the chances of his survival on this mission.</text>
 	<text>Your Engi crew member says your command and leadership style is "sufficient" and goes back to work.</text>
-	<text>Your Engi asks if you require anything of him. As you decline he immidiately walks away.</text>
+	<text>Your Engi asks if you require anything of him. As you decline he immediately walks away.</text>
 </textList>
 
 -->
@@ -10669,7 +10669,7 @@
 
 <eventList name="DEAD_CREW_PIRACY_CIVILIAN_RESULTS">
 	<event>
-		<text>The crew is unusually quiet. A salvage team strips the ship of useful materials and checks its cargo.</text>
+		<text>The crew is unusually quiet. A salvage team strips the ship of useful materials and checks it's cargo.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -10677,7 +10677,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>Your crew accuses you of betraying everything the Federation stands for. A salvage team is sent in to strip the ship of useful materials and report on its cargo.</text>
+		<text>Your crew accuses you of betraying everything the Federation stands for. A salvage team is sent in to strip the ship of useful materials and report on it's cargo.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -10694,11 +10694,11 @@
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
 	<event>
-		<text>So many individuals died by your hand during your mission, so the death of this civilians doesn't matter, right? The crew seems to think otherwise. You are able to take the fuel out of the ship's storage. You also take all the scrap you can manage.</text>
+		<text>So many individuals died by your hand during your mission, so the death of these civilians doesn't matter, right? The crew seems to think otherwise. You are able to take the fuel out of the ship's storage. You also take all the scrap you can manage.</text>
 		<autoReward level="HIGH">fuel</autoReward>
 	</event>
 	<event>
-		<text>You keep telling yourself this was necessary for the mission, but can't help but feel guilty. The looks your crew give you don't help either. You are able to take the fuel out of the ships storage. You also take all the scrap you can manage and request a report on the ship's cargo.</text>
+		<text>You keep telling yourself this was necessary for the mission, but can't help but feel guilty. The looks your crew give you don't help either. You are able to take the fuel out of the ship's storage. You also take all the scrap you can manage and request a report on the ship's cargo.</text>
 		<autoReward level="LOW">fuel</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -10711,14 +10711,14 @@
 		<autoReward level="MED">scrap_only</autoReward>
 	</event>
 	<event>
-		<text>Your crew is much more silent during the salvage operation than usual, no one talks to you anymore unless given orders. They find a weapon system on their ship. With all the civilians slaughtered, you can take it for your ship.</text>
+		<text>Your crew is much more silent during the salvage operation than usual, no one talks to you any more unless given orders. They find a weapon system on their ship. With all the civilians slaughtered, you can take it for your ship.</text>
 		<autoReward level="MED">weapon</autoReward>
 	</event>
 </eventList>
 
 <eventList name="DEAD_CREW_PIRACY_CIVILIAN_RESULTS_RISKLESS">
 	<event>
-		<text>Your crew has no problems with resorting to piracy. A salvage team strips the ship of useful materials and checks its cargo.</text>
+		<text>Your crew has no problems with resorting to piracy. A salvage team strips the ship of useful materials and checks it's cargo.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -10726,7 +10726,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>Your crew has no problems with resorting to piracy. A salvage team is sent in to strip the ship of useful materials and report on its cargo.</text>
+		<text>Your crew has no problems with resorting to piracy. A salvage team is sent in to strip the ship of useful materials and report on it's cargo.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -10804,7 +10804,7 @@
 
 <eventList name="DESTROYED_PIRACY_CIVILIAN_RESULTS">
 	<event>
-		<text>You will use the scrap for good, but can't help feeling like you lost your way. Crew morale is as low as it can get. Scans indicate some of the ship's cargo is still intact. You order an investigation.</text>
+		<text>You will use the scrap for good, but you can't help feeling like you lost your way. Crew morale is as low as it can get. Scans indicate some of the ship's cargo is still intact. You order an investigation.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -11223,7 +11223,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>They were carrying food supplies and agree to give up their cargo. This makes you just another space pirate, but you don't even have these fancy markings.</text>
+		<text>They were carrying food supplies and agree to give up their cargo. This makes you just another space pirate, and you don't even have those fancy markings.</text>
 		<ship hostile="false"/>
 		<augment name="TE_GOODS_CIVILIAN_FOOD"/>
 		<choice>
@@ -11267,7 +11267,7 @@
 
 <eventList name="C_PIRACY_SUCCESS_RESULTS">
 	<event>
-		<text>Your actions are frowned upon by your crew. Still, your command is not questioned and some crewmen understand that the missions is paramount.</text>
+		<text>Your actions are frowned upon by your crew. Still, your command is not questioned and some crewmen understand that the mission is paramount.</text>
 	</event>
 	<event>
 		<text>Your crew does not approve of your actions. They accuse you of betraying everything the Federation stands for.</text>
@@ -11288,7 +11288,7 @@
 		<text>Your keep telling yourself this was necessary for the mission, but can't help but feel guilty. The looks your crew give you don't help either.</text>
 	</event>
 	<event>
-		<text>Your crew is much more silent than usual as the bounty is loaded into the cargo holds. No one talks to you anymore unless given orders.</text>
+		<text>Your crew is much more silent than usual as the bounty is loaded into the cargo holds. No one talks to you any more unless given orders.</text>
 	</event>
 	<event>
 		<text>One of your crew members sends a formal complaint over the comms, arguing that this operation was unnecessary and against Federation protocols. He already deserted your ship via an escape pod.</text>
@@ -11316,11 +11316,11 @@
 	<choice hidden="true" req="slug">
 		<text>(Slug Crew) You knew this would happen...</text>
 		<event>
-			<text>Having telepaths on board really contributes to personal security. Your Slug addresses the Rebel spy: "Did you realized that your blasssterss magazine hasss been emptied? We knew about your intentionss sssince fourteen jumpsss. We let you sssee wrong flight data as well. No Rebel sship will come."</text>
+			<text>Having telepaths on board really contributes to personal security. Your Slug addresses the Rebel spy: "Did you realized that your blasssterss magazine hasss been emptied? We've known about your intentionss for fourteen jumpsss. We let you sssee wrong flight data as well. No Rebel sship will come."</text>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
-					<text>"We even know that you have doubtss about the Rebel fleet and thought about abandon you missssion. You already have contributed greatly to thiss crew. If you want to join the Captain for real, now isss the time!" Your Rebel affiliated crew member is pretty embarrassed. He admits that he thought about changing sides. You Slug will continue to have an eye on him, just in case.</text>
+					<text>"We even know that you have doubtss about the Rebel fleet and thought about abandon your missssion. You already have contributed greatly to thiss crew. If you want to join the Captain for real, now isss the time!" Your Rebel affiliated crew member is pretty embarrassed. He admits that he thought about changing sides. Your Slug will continue to have an eye on him, just in case.</text>
 				</event>
 			</choice>
 		</event>
@@ -11328,7 +11328,7 @@
 	<choice hidden="true" req="BOMB_1">
 		<text>(Small Bomb) Press the panic button on your pocket terminal.</text>
 		<event>
-			<text>Your ex-crewmen suddenly clenches in pain. You take cover behind your chair, shortly before the bomb that has been teleported into his guts explodes. The ship computer reports: "Anti treason procedure executed." The bridge looks pretty messy. Apart from the cleaning you will also have to deal with the Rebel ship that just jumped in.</text>
+			<text>Your ex-crewman suddenly clenches in pain. You take cover behind your chair, shortly before the bomb that has been teleported into his guts explodes. The ship computer reports: "Anti treason procedure executed." The bridge looks pretty messy. Apart from the cleaning you will also have to deal with the Rebel ship that just jumped in.</text>
 			<item_modify>
 				<item type="missiles" min="-1" max="-1"/>
 			</item_modify>
@@ -11446,7 +11446,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>Your chief of security already moved in position. A sniper shot from his blaster rifle eviscerates the traitor. But as promised, a Rebel ship jumps in soon afterwards. You should never have trusted this person.</text>
+		<text>Your chief of security already moved into position. A sniper shot from his blaster rifle eviscerates the traitor. But as promised, a Rebel ship jumps in soon afterwards. You should never have trusted this person.</text>
 		<crewMember amount="-1"/>
 		<modifyPursuit amount="1"/>
 		<ship load="C_REBEL_GUNBOAT_TRAITOR_REWARD" hostile="true"/>
@@ -11570,7 +11570,7 @@
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text>"You don't understand anything. The Rebel fleet will bring prosperity and peace for everyone. For the Rebellion!" He fires a few unaimed shots and jumps into the lift. The hangar doors have opened. The traitor escapes in one of your shuttles! As promised, a Rebel ship jumps in.</text>
+				<text>"You don't understand anything. The Rebel fleet will bring prosperity and peace for everyone. For the Rebellion!" He hastily fires a few shots and jumps into the lift. The hangar doors have opened. The traitor escapes in one of your shuttles! As promised, a Rebel ship jumps in.</text>
 				<crewMember amount="-1"/>
 				<modifyPursuit amount="1"/>
 				<ship load="C_REBEL_GUNBOAT_TRAITOR" hostile="true"/>
@@ -11720,7 +11720,7 @@
 			<text>Continue...</text>
 			<event>
 				<ship load="C_BOUNTYHUNTER_EFFECTOR" hostile="true"/>
-				<text>Your ship has been infiltrated! Life support and the internal security are taken over by a modified Auto-Assault ship that decloaks right above your ship. The bounty hunter must have sent it your access code. The ship is not firing yet, but sends out drones to assist its master. "Sorry to tell you, but you will all suffocate."</text>
+				<text>Your ship has been infiltrated! Life support and the internal security are taken over by a modified Auto-Assault ship that decloaks right above your ship. The bounty hunter must have sent it your access code. The ship is not firing yet, but sends out drones to assist it's master. "Sorry to tell you, but you will all suffocate."</text>
 				<boarders min="1" max="1" class="human"/>
 				<status type="limit" target="enemy" system="weapons" amount="0"/>
 				<status type="limit" target="enemy" system="cloaking" amount="0"/>
@@ -11785,7 +11785,7 @@
 			<text>Continue...</text>
 			<event>
 				<ship load="C_BOUNTYHUNTER_EFFECTOR" hostile="true"/>
-				<text>Your ship has been infiltrated! Life-support and the internal security are taken over by a modified Auto-Assault ship that decloaks right above your ship. The bounty hunter must have sent it your access code. The ship is not firing yet, but sends out drones to assist its master. "Sorry to tell you, but you will all suffocate."</text>
+				<text>Your ship has been infiltrated! Life-support and the internal security are taken over by a modified Auto-Assault ship that decloaks right above your ship. The bounty hunter must have sent it your access code. The ship is not firing yet, but sends out drones to assist it's master. "Sorry to tell you, but you will all suffocate."</text>
 				<status type="limit" target="enemy" system="weapons" amount="0"/>
 				<status type="limit" target="enemy" system="cloaking" amount="0"/>
 				<status type="limit" target="player" system="oxygen" amount="0"/>
@@ -11852,14 +11852,14 @@
 <eventList name="CE_BOARDERS_BOUNTYHUNTER_SCAN_ADVANCED">
 	<event>
 		<ship load="C_BOUNTYHUNTER" hostile="true"/>
-		<text>The advanced sensors pick up a personal cloaking field and flag the position of the intruder. You sound the security alert and a heavily modified Auto-Assault immediately decloaks right above your ship.</text>
+		<text>The advanced sensors pick up a personal cloaking field and flags the position of the intruder. You sound the security alert and a heavily modified Auto-Assault immediately decloaks right above your ship.</text>
 		<status type="limit" target="enemy" system="weapons" amount="0"/>
 		<status type="limit" target="enemy" system="cloaking" amount="0"/>
 		<boarders min="1" max="1" class="human"/>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text>These vessels are usually used by bounty hunters - extremely dangerous individuals. The Rebels must have put a price on your head. The auto ship is not firing yet, but sends out drones to assist its master.</text>
+				<text>These vessels are usually used by bounty hunters - extremely dangerous individuals. The Rebels must have put a price on your head. The auto ship is not firing yet, but sends out drones to assist it's master.</text>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
@@ -11915,14 +11915,14 @@
 	</event>
 	<event>	
 	<ship load="C_BOUNTYHUNTER" hostile="true"/>
-		<text>The advanced sensors pick up a personal cloaking field and flag the position of the intruder. You sound the security alert and a heavily modified Auto-Assault immediately decloaks right above your ship.</text>
+		<text>The advanced sensors pick up a personal cloaking field and flags the position of the intruder. You sound the security alert and a heavily modified Auto-Assault immediately decloaks right above your ship.</text>
 		<boarders min="1" max="1" class="human"/>
 		<status type="limit" target="enemy" system="weapons" amount="0"/>
 		<status type="limit" target="enemy" system="cloaking" amount="0"/>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text>These vessels are usually used by bounty hunters - extremely dangerous individuals. The Rebels must have put a price on your head. The auto ship is not firing yet, but sends out drones to assist its master.</text>
+				<text>These vessels are usually used by bounty hunters - extremely dangerous individuals. The Rebels must have put a price on your head. The auto ship is not firing yet, but sends out drones to assist it's master.</text>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
@@ -11977,7 +11977,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>The full scan discovers a power fluctuation in the secondary shield coil, which was interpreted as transporter signature before. You let your engineer fix the glitch while waiting for the FTL to charge.</text>
+		<text>The full scan discovers a power fluctuation in the secondary shield coil, which was interpreted as a transporter signature before. You let your engineer fix the glitch while waiting for the FTL to charge.</text>
 	</event>
 </eventList>
 
@@ -11985,14 +11985,14 @@
 <eventList name="CE_BOARDERS_BOUNTYHUNTER_DOORS">
 	<event>
 		<ship load="C_BOUNTYHUNTER" hostile="true"/>
-		<text>Federations Protokoll sugests a security alert when bording is possible but not confirmed. You sight and order to engage the security lockdown. Suddenly a heavily modified Auto-Assault immediately decloaks right above your ship.</text>
+		<text>Federations Protocol suggests a security alert when boarding is possible but not confirmed. You sigh and order the security lockdown. Suddenly a heavily modified Auto-Assault immediately decloaks right above your ship.</text>
 		<status type="limit" target="enemy" system="weapons" amount="0"/>
 		<status type="limit" target="enemy" system="cloaking" amount="0"/>
 		<boarders min="1" max="1" class="human"/>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text>These vessels are usually used by bounty hunters - extremely dangerous individuals. The Rebels must have put a price on your head. You probably have been boarded. The auto ship is not firing yet, but sends out drones to assist its master.</text>
+				<text>These vessels are usually used by bounty hunters - extremely dangerous individuals. The Rebels must have put a price on your head. You probably have been boarded. The auto ship is not firing yet, but sends out drones to assist it's master.</text>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
@@ -12048,14 +12048,14 @@
 	</event>
 	<event>	
 	<ship load="C_BOUNTYHUNTER" hostile="true"/>
-		<text>Federations Protokoll sugests a security alert when bording is possible but not confirmed. You sight and order to engage the security lockdown. Suddenly a heavily modified Auto-Assault immediately decloaks right above your ship.</text>
+		<text>Federations Protocol suggests a security alert when boarding is possible but not confirmed. You sigh and engage the security lockdown. Suddenly a heavily modified Auto-Assault immediately decloaks right above your ship.</text>
 		<boarders min="1" max="1" class="human"/>
 		<status type="limit" target="enemy" system="weapons" amount="0"/>
 		<status type="limit" target="enemy" system="cloaking" amount="0"/>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text>These vessels are usually used by bounty hunters - extremely dangerous individuals. The Rebels must have put a price on your head. You probably have been boarded already. The auto ship is not firing yet, but sends out drones to assist its master.</text>
+				<text>These vessels are usually used by bounty hunters - extremely dangerous individuals. The Rebels must have put a price on your head. You have probably been boarded already. The auto ship is not firing yet, but sends out drones to assist it's master.</text>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
 			<event load="CE_PRE_FIGHT_EFFECTOR"/>
@@ -12110,7 +12110,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>The full scan discovers a power fluctuation in the secondary shield coil, which as interpreted as transporter signature before. You let your engineer fix the glitch while waiting for the FTL to charge.</text>
+		<text>The full scan discovers a power fluctuation in the secondary shield coil, which was interpreted as a transporter signature before. You let your engineer fix the glitch while waiting for the FTL to charge.</text>
 	</event>
 </eventList>
 
@@ -12123,7 +12123,7 @@
 			<text>Continue...</text>
 			<event>
 				<ship load="C_BOUNTYHUNTER" hostile="true"/>
-				<text>A heavily modified Auto-Assault immediately decloaks right above your ship. These vessels are usually used by bounty hunters - extremely dangerous individuals. The Rebels must have put a price on your head. The ship is not firing yet, but sends out drones to assist its master.</text>
+				<text>A heavily modified Auto-Assault immediately decloaks right above your ship. These vessels are usually used by bounty hunters - extremely dangerous individuals. The Rebels must have put a price on your head. The ship is not firing yet, but sends out drones to assist it's master.</text>
 				<status type="limit" target="enemy" system="weapons" amount="0"/>
 				<status type="limit" target="enemy" system="cloaking" amount="0"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
@@ -12187,7 +12187,7 @@
 			<text>Continue...</text>
 			<event>
 				<ship load="C_BOUNTYHUNTER" hostile="true"/>
-				<text>A heavily modified Auto-Assault immediately decloaks right above your ship. These vessels are usually used by bounty hunters - extremely dangerous individuals. The Rebels must have put a price on your head. The ship is not firing yet, but sends out drones to assist its master.</text>
+				<text>A heavily modified Auto-Assault immediately decloaks right above your ship. These vessels are usually used by bounty hunters - extremely dangerous individuals. The Rebels must have put a price on your head. The ship is not firing yet, but sends out drones to assist it's master.</text>
 				<status type="limit" target="enemy" system="weapons" amount="0"/>
 				<status type="limit" target="enemy" system="cloaking" amount="0"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
@@ -12255,7 +12255,7 @@
 			<text>Continue...</text>
 			<event>
 				<ship load="C_BOUNTYHUNTER" hostile="true"/>
-				<text>You reconfigure the internal sensors and sound the security alert. A heavily modified Auto-Assault immediately decloaks right above your ship. The AI is not firing yet, but sends out drones to assist its master.</text>
+				<text>You reconfigure the internal sensors and sound the security alert. A heavily modified Auto-Assault immediately decloaks right above your ship. The AI is not firing yet, but sends out drones to assist it's master.</text>
 				<status type="limit" target="enemy" system="weapons" amount="0"/>
 				<status type="limit" target="enemy" system="cloaking" amount="0"/>
 				<boarders min="1" max="1" class="human"/>
@@ -12318,7 +12318,7 @@
 			<text>Continue...</text>
 			<event>
 				<ship load="C_BOUNTYHUNTER" hostile="true"/>
-				<text>You reconfigure the internal sensors and sound the security alert. A heavily modified Auto-Assault immediately decloaks right above your ship. The AI is not firing yet, but sends out drones to assist its master.</text>
+				<text>You reconfigure the internal sensors and sound the security alert. A heavily modified Auto-Assault immediately decloaks right above your ship. The AI is not firing yet, but sends out drones to assist it's master.</text>
 				<status type="limit" target="enemy" system="weapons" amount="0"/>
 				<status type="limit" target="enemy" system="cloaking" amount="0"/>
 				<boarders min="1" max="1" class="human"/>
@@ -12376,7 +12376,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>The Slug stares at a wall for a bit long time. "Your sscanersss musst be malfunctioning, Captain. I ssense no one apart form our usual crew members on board." The crew relaxes and you pour yourself some replicator-coffee while your wait for the FTL to charge.</text>
+		<text>The Slug stares at a wall for a long time. "Your sscanersss musst be malfunctioning, Captain. I ssense no one apart form our usual crew members on board." The crew relaxes and you pour yourself some replicator-coffee while your wait for the FTL to charge.</text>
 	</event>
 </eventList>
 
@@ -12575,7 +12575,7 @@
 <textList name="C_EVENT_CIVILIAN_TRANSPORT_TEXT">
 	<text>You spot a civilian transport ship nearby. Passive scans indicate they are transporting locally produced goods.</text>
 	<text>A lightly armed transport ship jumps in shortly after you. They refuse all hails, so you just quietly recharge your FTLs besides each other.</text>
-	<text>A civilian transport hails: "Federation friendlies? Good to see you. We are on the way to the core systems, cargo run. Do you have news from the war?" After a little chit chat they prepare to jump.</text>
+	<text>A civilian transport hails: "Federation friendlies? Good to see you. We are on our way to the core systems, cargo run. Do you have news from the war?" After a little chit chat they prepare to jump.</text>
 	<text>A civilian recharges it's FTL at this beacon. They greet you: "Wow, nice cruiser you have there... We are an almost unarmed merchant vessel and we are no threat, okay?" They seem to feel threatened.</text>
 </textList>
 
@@ -12589,7 +12589,7 @@
 </event>
 <textList name="CE_STRAY_FLEET_TEXT">
 	<text planet="PLANET_UNPOPULATED">A devastated Federation cruiser squadron is recharging their jump drives in high orbit. They respond to your hails. "We are trying to get to the Federation base to make our last stand. We know about your mission, but all we can spare is some equipment. Good luck!"</text>
-	<text>The smoking remains of a Federation battalion is limping towards this beacon. The ships all show heavy damage, some are losing oxygen through hull breaches, others can only power impulse drives. A bomber with weapon systems damaged beyond repair agrees to transfer its still intact equipment to you.</text>
+	<text>The smoking remains of a Federation battalion is limping towards this beacon. The ships all show heavy damage, some are losing oxygen through hull breaches, others can only power impulse drives. A bomber with weapon systems damaged beyond repair agrees to transfer it's still intact equipment to you.</text>
 	<text>You run into a stray squadron of the Federation performing emergency repairs at this beacon. They are in fast retreat, but can spare some supplies to aid you in your mission.</text>
 	<text>A young commander of a stray Federation squadron hails you: "We advise you to evade the fleet at RA 14h03m05.83s. Make contact with fleet command once you reached the Federation Base. Staying with this squadron will make you easier to find. Be on your way now, and good luck!" They transfer some equipment to help.</text>
 	<text>As soon as you arrive a small Federation fleet detachment jumps in. The ships show heavy damage and their weapons are still hot. "We had to retreat. There where just too many of them. How could their fleet have grown so fast? Let us transfer some equipment to help. See you on the other side."</text>
@@ -12666,7 +12666,7 @@
 </event>
 <eventList name="CE_DISTRESS_SUN_DOCK">
 	<event>
-		<text>Another massive solar flare blasts into your crafts right as you are about to compleat the docking maneuver. The civilian vessel is torn away from your ship and their airlock gets ripped open in the process. You realize that there is no way to save them now.</text>
+		<text>Another massive solar flare blasts into your crafts right as you are about to complete the docking maneuver. The civilian vessel is torn away from your ship and their airlock gets ripped open in the process. You realize that there is no way to save them now.</text>
 		<environment type="sun"/>
 		<damage amount="3"/>
 		<ship load="CIVILIAN_SHIP" hostile="false"/>
@@ -12678,7 +12678,7 @@
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text>"Nice try, Captain. We appreciate it. My crew and me come from a nearby colony... please tell our loved ones what happened here. Now save yourselves!" They transmit their black-box data and cut communication. You try to focus on getting your ship out of here.</text>
+				<text>"Nice try, Captain. We appreciate it. My crew and I come from a nearby colony... please tell our loved ones what happened here. Now save yourselves!" They transmit their black-box data and cut communication. You try to focus on getting your ship out of here.</text>
 			<quest event="CE_DISTRESS_SUN_FAMILY_RETURN"/>
 			<status type="limit" target="enemy" system="shields" amount="0"/>
 			<status type="limit" target="enemy" system="engines" amount="0"/>
@@ -12689,7 +12689,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>Another massive solar flare blasts into your crafts right as you are about to compleat the docking maneuver. The civilian vessel is torn away from your ship and their airlock gets ripped open in the process. You realize that there is no way to save them now.</text>
+		<text>Another massive solar flare blasts into your crafts right as you are about to complete the docking maneuver. The civilian vessel is torn away from your ship and their airlock gets ripped open in the process. You realize that there is no way to save them now.</text>
 		<environment type="sun"/>
 		<damage amount="3"/>
 		<ship load="CIVILIAN_SHIP" hostile="false"/>
@@ -12701,7 +12701,7 @@
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text>"Nice try, Captain. We appreciate it. My crew and me come from a nearby colony... please tell our loved ones what happened here. Now save yourselves!" They transmit their black-box data and cut communication. You try to focus on getting your ship out of here.</text>
+				<text>"Nice try, Captain. We appreciate it. My crew and I come from a nearby colony... please tell our loved ones what happened here. Now save yourselves!" They transmit their black-box data and cut communication. You try to focus on getting your ship out of here.</text>
 			<quest event="CE_DISTRESS_SUN_FAMILY_RETURN"/>
 			<status type="limit" target="enemy" system="shields" amount="0"/>
 			<status type="limit" target="enemy" system="engines" amount="0"/>
@@ -12712,7 +12712,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>Right as you are about to dock, another flare blasts into the civilian craft. The dampeners barely manage to compensate the impact. Most of the ships crew suffered terminal radiation burns, but the ones you managed to save are grateful. You'll drop them off at the next station.</text>
+		<text>Right as you are about to dock, another flare blasts into the civilian craft. The dampeners barely manage to compensate for the impact. Most of the ships crew suffered terminal radiation burns, but the ones you managed to save are grateful. You'll drop them off at the next station.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
 </eventList>
@@ -12722,7 +12722,7 @@
 		<crewMember amount="1"/>
 	</event>
 	<event>
-		<text>They refuse at first, but after another flare ignites fires in their medbay they agree and beam aboard your ship. You advanced teleporters manage to lock on, even from this range. They say, "Thank you but we really should return to our families...  I'm sure we can muster up a reward if you take us home."</text>
+		<text>They refuse at first, but after another flare ignites fires in their medbay they agree and beam aboard your ship. Your advanced teleporters manage to lock on, even at this range. They say, "Thank you, but we really should return to our families...  I'm sure we can muster up a reward if you take us home."</text>
 		<choice hidden="true">
 			<text>Take them to the nearby planet, where they're from.</text>
 			<event load="FAMILY_RETURN"/>   
@@ -12731,10 +12731,10 @@
 </eventList>
 <eventList name="CE_DISTRESS_SUN_FAMILY_RETURN">
 	<event>
-		<text planet="PLANET_POPULATED_SMALL">The news you are supposed to deliver here are grim. After hearing what happened of their relatives, the families of the lost ships crewmen are all deeply struck with grief. They politely thank you for your effort. You feel like some of them put the blame on you.</text>
+		<text planet="PLANET_POPULATED_SMALL">The news you are supposed to deliver here is grim. After hearing what happened to their relatives, the families of the crewmen are all stricken with grief. They politely thank you for your effort. You feel like some of them put the blame on you.</text>
 	</event>
 	<event>
-		<text planet="PLANET_POPULATED_SMALL">The news you are supposed to deliver here are grim. After hearing what happened of their relatives, the families of the lost ships crewmen are all deeply struck with grief. They politely thank your for informing them and offer a compensation for your efforts.</text>
+		<text planet="PLANET_POPULATED_SMALL">The news you are supposed to deliver here is grim. After hearing what happened to their relatives, the families of the crewmen are all stricken with grief. They politely thank your for informing them and offer a compensation for your efforts.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
 </eventList>
@@ -12745,11 +12745,11 @@
 	<choice hidden="true">
 		<text>Offer to lead the charge against the pirate hideout.</text>
 		<event>
-			<text>After some discussions, the local defenders agree with your idea. "Alright, let's do this. We keep their ships away from you while you pound their outpost. Take the lead." Their small defense force made up of scouts gets in formation behind your ship and you head out towards the the pirate base.</text>
+			<text>After some discussion, the local defenders agree with your idea. "Alright, let's do this. We'll keep their ships away from you while you pound their outpost. Take the lead." Their small defense force made up of scouts gets in formation behind your ship and you head out towards the the pirate base.</text>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
-					<text>You discover the pirate station hidden within the asteroid rings of of the systems sixth planet. Your wingmen chase the pirates into the field while you start targeting the station. Full battle readiness!</text>
+					<text>You discover the pirate station hidden within the asteroid rings of of the system's sixth planet. Your wingmen chase the pirates into the field while you start targeting the station. Full battle readiness!</text>
 					<environment type="asteroid"/>
 					<ship load="BS_PIRATE_STRONGHOLD" hostile="true"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
@@ -12809,7 +12809,7 @@
 	<choice hidden="true">
 		<text>Offer to stay a while and help repel the next attack.</text>
 		<event>
-			<text>You spend some time aboard the station, planing defense strategies. The crew and you make some new friends as well. Then the alarms go off. Here they come again! You hurry back to the ship. The fighting already started when you cruiser detaches from the station and you target the nearest pirate.</text>
+			<text>You spend some time aboard the station, planing defensive strategies. The crew and you make some new friends as well. Then the alarms go off. Here they come again! You hurry back to the ship. The fighting has already started as your cruiser detaches from the station. You target the nearest pirate.</text>
 			<modifyPursuit amount="1"/>
 			<ship load="PIRATE_DEFENSE" hostile="true"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
@@ -12894,7 +12894,7 @@
 		<autoReward level="LOW">standard</autoReward>
 	</event>
 	<event>
-		<text>Only two of the defenders report in. "The outlaws knew their turf quite well. We suffered heavy damage from asteroid impacts... Seriously, you do this stuff on a daily basis? We got to search for our friends... "They thank you for your help and offer a small reward, then head off into the field.</text>
+		<text>Only two of the defenders report in. "The outlaws knew their turf quite well. We suffered heavy damage from asteroid impacts... Seriously, you do this stuff on a daily basis? We've got to search for our friends... "They thank you for your help and offer a small reward, then head off into the field.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</event>
 	<event>
@@ -12903,11 +12903,11 @@
 </eventList>
 <eventList name="DEFENSE_SUCCESS_LIST">   
 	<event>
-		<text>Although station and ships have taken some damage, the whole operation is considered a success. A young crewmen is so amazed by you commitment that he offers to join your team.</text>
+		<text>Although station and ships have taken some damage, the whole operation is considered a success. A young crewman is so amazed by your commitment that he offers to join your team.</text>
 		<choice>
 			<text>Welcome aboard!</text>
 			<event>
-				<text>You dock and take your new crewmen on board. Then you say good bye to everyone and prepare to jump.</text>
+				<text>You dock and take your new crewman on board. Then you say good bye to everyone and prepare to jump.</text>
 				<crewMember amount="1"/>
 			</event>
 		</choice>
@@ -12925,7 +12925,7 @@
 		<autoReward level="LOW">standard</autoReward>
 	</event>
 	<event>
-		<text>"Wow, we really showed them! Guess we won't need all of these guns no more. You should take one with you. Take care out there." The install a piece of equipment on your ship and you prepare to jump after saying good bye to evereyone.</text>
+		<text>"Wow, we really showed them! Guess we won't need all of these guns any more. You should take one with you. Take care out there." They install a piece of equipment on your ship and you prepare to jump after saying good bye to everyone.</text>
 		<weapon name="RANDOM"/>
 	</event>
 	<event>
@@ -12938,7 +12938,7 @@
 </eventList>
 
 <event name="CE_DISTRESS_MELTDOWN" unique="true"> 
-	<text>Once you arrive at the location of the distress call a small cargo ship hails you, "Shiny! Glad you are not another pirate. We got ambushed by some outlaws and our shield power couplers got damaged beyond repair. We have energy, but can't get the shields up again." They are completely defenseless.</text>
+	<text>Once you arrive at the location of the distress call a small cargo ship hails you, "Shiny! Glad you are not another pirate. We got ambushed by some outlaws and our shield power coupler got damaged beyond repair. We have energy, but can't get the shields up again." They are completely defenseless.</text>
 	<distressBeacon/>
 	<ship load="C_CIVILIAN_TRANSPORT" hostile="false"/>
 	<choice>
@@ -13151,7 +13151,7 @@
 	<choice req="shields" lvl="7" hidden="true"> 
 		<text>(Advanced Shields) Jump-start their shields with your generator.</text>
 		<event>
-			<text>Your crew figures out a makeshift cable solution to connect your shield generator to theirs. The cargo crew is sceptical at first, but the power transfer actually works. You manage to start up their generator and it produces a stable shield ellipse.</text>
+			<text>Your crew put together a makeshift cable solution to connect your shield generator to theirs. The cargo crew is sceptical at first, but the power transfer actually works. You manage to start up their generator and it produces a stable shield ellipse.</text>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event load="TE_REWARD_GOODS_CHEAP"/>
@@ -13161,7 +13161,7 @@
 	<choice req="SHIELD_RECHARGE" hidden="true"> 
 		<text>(Shield Charge Booster) Jump-start their shields with your charge booster.</text>
 		<event>
-			<text>You dock with the ship, connect the booster to their shield generator and hit the charge button. Sparks fly from you console. "Wow, easy with the charge, fire in the shield room. But we got it under control and our shields came up!"</text>
+			<text>You dock with the ship, connect the booster to their shield generator and hit the charge button. Sparks fly from their console. "Wow, easy with the charge, fire in the shield room. But we got it under control and our shields came up!"</text>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event load="TE_REWARD_GOODS_CHEAP"/>
@@ -13171,7 +13171,7 @@
 	<choice req="TE_GOODS_ZOLTAN_SHIELDS" hidden="true"> 
 		<text>(Shield Components) Give them spare parts.</text>
 		<event>
-			<text>No one will miss one shield couple when you sell the batch. You tell them that you have the necessary spare parts and they gladly accept it. They install it and their shields come back up.</text>
+			<text>No one will miss one shield coupling when you sell the batch. You tell them that you have the necessary spare part and they gladly accept it. They install it and their shields come back up.</text>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event load="TE_REWARD_GOODS_CHEAP"/>
@@ -13193,11 +13193,11 @@
 
 <eventList name="TE_REWARD_GOODS_CHEAP">
 	<event>
-		<text>The crew of the cargo ship is amazed and quite grateful. "Not sure we would have had a chance to get home alive without you. We are low on scrap, but we can give you some of our goods as compensation. They sell really good in far off sectors, like nebulae and pirate territories."</text>
+		<text>The crew of the cargo ship is amazed and quite grateful. "Not sure we would have had a chance to get home alive without you. We are low on scrap, but we can give you some of our goods as compensation. They sell really well in far off sectors, like nebulae and pirate territories."</text>
 		<augment name="TE_GOODS_CIVILIAN_CONSUMER"/>
 	</event>
 	<event>
-		<text>"Wow, that worked really well. Guess we have a chance to get home in one piece now. You should take some of our cargo, we just want to get out of this sector as quickly as possible. These consume good sell really good in far off sectors, like nebulae and pirate territories. Try to make them worthwhile."</text>
+		<text>"Wow, that worked really well. Guess we have a chance to get home in one piece now. You should take some of our cargo, we just want to get out of this sector as quickly as possible. These consumer goods sell really well in far off sectors, like nebulae and pirate territories. Try to make them worthwhile."</text>
 		<augment name="TE_GOODS_CIVILIAN_CONSUMER"/>
 	</event>
 	<event>
@@ -13426,11 +13426,11 @@
 </event>
 <eventList name="CE_DISTRESS_OXYGEN_BORING">
 	<event>
-		<text>The crew of the cargo ship is glad to breath some clean air. "Thank you, Captain. I cant believe we got ourself into this. Let's hope we make it to a settlement quick." They offer a small compensation.</text>
+		<text>The crew of the cargo ship is glad to breath some clean air. "Thank you, Captain. I can't believe we got ourself into this. Let's hope we make it to a settlement quick." They offer a small compensation.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
 	<event>
-		<text>The crew of the cargo ship is glad to breath some clean air. "Thank you, Captain. But this might not be enough. We will jump on now." The detach from your ship.</text>
+		<text>The crew of the cargo ship is glad to breath some clean air. "Thank you, Captain. But this might not be enough. We will jump on now." They detach from your ship.</text>
 	</event>
 	<event>
 		<text>The crew of the cargo ship is glad to breath some clean air. "Thank you, Captain. We hope we can repay you one day."</text>
@@ -13438,7 +13438,7 @@
 </eventList>
 
 <event name="CE_DISTRESS_DRONES" unique="true">
-	<text>The distress signal is coming from a heavily guarded mining platform. An unhappy employee has sabotaged the drone control. Industrial beam drones run amok and attack the installation. The stations shields hold, but the mining company can't manage to regain control of their drones.</text>
+	<text>The distress signal is coming from a heavily guarded mining platform. An unhappy employee has sabotaged the drone control. Industrial beam drones run amok and attack the installation. The station's shield holds, but the mining company can't manage to regain control of their drones.</text>
 	<distressBeacon/>
 	<choice hidden="true">
 		<text>Try to pick off the drones with your weapons.</text>
@@ -13460,14 +13460,14 @@
 	<choice req="AE_DRONE_JAMMER" hidden="true">
 		<text>(Drone Uplink Jammer) Sever the drone uplink.</text>
 		<event>
-			<text>You ask for their frequencies and the drones go offline with a single push o a button. You saved the day for this corporation. The mining boss is offering a generous reward.</text>
+			<text>You ask for their frequencies and the drones go offline with a single push of a button. You saved the day for this corporation. The mining boss offers a generous reward.</text>
 			<autoReward level="LOW">standard</autoReward>
 		</event>
 	</choice>
 	<choice hidden="true" req="drones" lvl="4">
 		<text>(Improved Drone Control) Reboot their system.</text>
 		<event>
-			<text>After some discussions, you are allowed to connect to their mainframe. Your advanced drone control resets the drones friend/foe recognition and the problem is solved. The mining boss is offering a generous reward.</text>
+			<text>After some discussion, you are allowed to connect to their mainframe. Your advanced drone control resets the drone's friend/foe recognition and the problem is solved. The mining boss offers a generous reward.</text>
 			<autoReward level="LOW">standard</autoReward>
 		</event>
 	</choice>
@@ -13494,7 +13494,7 @@
 </event>
 <eventList name="CE_DISTRESS_DRONES_BORING">
 	<event>
-		<text>After a few training shots you actually get lucky and manage to take out a few of the drones. The mining authorities aren't too happy about the destruction of their assets, but offer a small reward. One of the miners is impressed by your ship and wants to quit his job to live a life of adventure among your crew.</text>
+		<text>After a few practice shots you actually get lucky and manage to take out a few of the drones. The mining authorities aren't too happy about the destruction of their assets, but offer a small reward. One of the miners is impressed by your ship and wants to quit his job to live a life of adventure among your crew.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<choice>
 			<text>Welcome aboard!</text>
@@ -13509,7 +13509,7 @@
 		</choice>
 	</event>
 	<event>
-		<text>You spend a lot of time and energy firing on drones from all angles. They are designed to be difficult to hit, so it's no wonder that you don't succeed. You give up quite annoyed.</text>
+		<text>You spend a lot of time and energy firing on drones from all angles. They are designed to be difficult to hit, so it's no wonder that you don't succeed. You give up quite annoyed with your weapons officer.</text>
 	</event>
 	<event>
 		<text>You start firing full barges against the drones that zip around the station. A few shots hit the stations shields, which allows the drones to cut away a few antennas. You are hailed: "We appreciate the effort, but we think this is enough." You notice that their defense satellites came online. Time to leave?</text>
@@ -13521,13 +13521,13 @@
 		<choice req="AE_ADV_THRUSTERS" hidden="true">
 			<text>(Advanced Proximity Navigation) Flag the projectiles as debris and try to evade them.</text>
 			<event>
-				<text>Your ship AI fires the navigation boosters in a complex pattern and manages to evade the incoming explosives. The mining base took heavy damage though. They politely ask you to leave now and activate their defense satellites to emphasis their request.</text>
+				<text>Your ship AI fires the navigation boosters in a complex pattern and manages to evade the incoming explosives. The mining base took heavy damage though. They politely ask you to leave now and activate their defense satellites to emphasize their request.</text>
 			</event>
 		</choice>
 		<choice>
 			<text>Continue...</text>
 			<event>
-				<text>They explode on our hull. The mining base took even more damage. They politely ask you to leave now and activate their defense satellites to emphasis their request.</text>
+				<text>They explode on our hull. The mining base took even more damage. They politely ask you to leave now and activate their defense satellites to emphasize their request.</text>
 				<damage amount="3"/>
 			</event>
 		</choice>
@@ -13689,7 +13689,7 @@
 	<choice req="AE_TELEPORTER_JAMMER" hidden="true">
 		<text>(Teleporter Disruptor) Don't let them board us!</text>
 		<event>
-			<text>You scamble their teleporters and a few seconds later blast the tiny shuttle into a few thousand pieces. That was that, moving on.</text>
+			<text>You scramble their teleporters and a few seconds later blast the tiny shuttle into a few thousand pieces. That was that, moving on.</text>
 		</event>
 	</choice>
 	<choice>
@@ -13727,13 +13727,13 @@
 </eventList>
 <eventList name="LONE_SHUTTLE_DESTROY">
 	<event>
-		<text>An unusual big explosion erupts as you fire on the shuttle. Nothing of it remains salvageable.</text>
+		<text>An unusually big explosion erupts as you fire on the shuttle. Nothing of it remains salvageable.</text>
 	</event>
 	<event>
-		<text>An unusual big explosion erupts as you fire on the shuttle. Nothing of it remains salvageable.</text>
+		<text>An unusually big explosion erupts as you fire on the shuttle. Nothing of it remains salvageable.</text>
 	</event>
 	<event>
-		<text>An unusual big explosion erupts as you fire on the shuttle. Nothing of it remains salvageable.</text>
+		<text>An unusually big explosion erupts as you fire on the shuttle. Nothing of it remains salvageable.</text>
 	</event>
 	<event>
 		<text>Scans show no biological remains in the vessel; it was unmanned... very strange.</text>
@@ -14854,11 +14854,11 @@ IDEAS
 	<text>As you jump into the system a local militia ship confronts you. "The Rebel fleet has put a price on your head. You are a wanted criminal. We will take you, alive or dead". Seems you won't make many friends here.</text>
 	<text>Soon after arriving in the system you are hailed by a small militia ship. "Not everyone wants to stick with this fancy Federation of yours you know? The Rebels promised us independence and we will have it." They move in to engage.</text>
 	<text>At first it appears you've arrived in an peaceful colony system, but a ship appears from behind a small moon and engages you. They hail: "Federation sympathizers are not welcome here any more. We will fire upon you until your charge your FTL and leave."</text>
-	<text>Some of the local militias seem to be cooperating with the Rebels. One of their ships is docked at nearby depot, but moves in to intercept when you arrive.</text>
-	<text>The Rebels must have informed the sectors militias that they are looking for you. Several of their ships patrols nearby, one breaks course and engages you.</text>
+	<text>Some of the local militias seem to be cooperating with the Rebels. One of their ships is docked at nearby depot, but moves in to intercept you as you arrive.</text>
+	<text>The Rebels must have informed the sectors' militias that they are looking for you. Several of their ships patrol nearby, one breaks course and engages you.</text>
 	<text>As you arrive you are immediately hailed by a militia ship: "We know that you are carrying intel the Rebels want. It was a mistake to come here. We won't bend to Federation rule again!" They charge weapons.</text>
-	<text>After jump completion a militia ship hails you: "Federation Sympathizer. You are under arrest by our local jurisdiction. Hand over your ships control to us." You have to assume that these guys are cooperating with the Rebels... "Comply or prepare to be fired at." They lose patience fast and start to fire.</text>
-	<text>The militia escort of small trade caravan takes your still hot weapon signatures for an act of aggression. The can't be reasoned with and engage.</text>
+	<text>After jump completion a militia ship hails you: "Federation Sympathizer. You are under arrest by our local jurisdiction. Hand over your ship control codes to us." You have to assume that these guys are cooperating with the Rebels... "Comply or prepare to be fired upon." They lose patience fast and start to fire.</text>
+	<text>The militia escort of small trade caravan takes your still hot weapon signatures as an act of aggression. The can't be reasoned with and engage.</text>
 </textList>
 
 <event name="BS_EVENT_MILITIA"> <!-- hostile -->
@@ -14917,8 +14917,8 @@ IDEAS
 </event>
 <textList name="BS_EVENT_MILITIA_TEXT">  <!-- to do -->
 	<text>A nearby station has been taken over by local militias. They refuse all hails and start firing on you.</text>
-	<text>After jump completion you register a small military instalment. They identify themselves as "independent", but that they start firing on you for no reason suggests that they might be sympathising with the Rebel fleet.</text>
-	<text>You receive hail from a small station: "The Rebels want you dead an we want peace in our sector. So... we will destroy your ship, hand the remains to the fleet and things can finally go back to normal here." Weapon lock detected!</text>
+	<text>After jump completion you register a small military instalment. They identify themselves as "independent", but they start firing on you for no reason. They might be sympathising with the Rebel fleet...</text>
+	<text>You receive hail from a small station: "The Rebels want you dead an we want peace in our sector. So... we will destroy your ship, hand the remains to the fleet and things can finally go back to normal here." Weapon locks detected!</text>
 </textList>
 
 
@@ -15120,14 +15120,14 @@ IDEAS
 	</choice>
 </event>
 <textList name="CIVILIAN_TRADE_DEPOT_TEXT">
-	<text planet="PLANET_POPULATED">A transmission from the nearby planet indicates an outpost in orbit which offers trade goods.</text>
+	<text planet="PLANET_POPULATED">A transmission from the nearby planet indicates an outpost is in orbit which offers trade goods.</text>
 	<text planet="PLANET_POPULATED">The space station is offering local goods. They do not offer ship equipment though.</text>
 	<text planet="PLANET_POPULATED">A trade depot orbits the nearby planet. Multiple merchant ships are docked. Looks like you can strike a bargain here. The seem to trade only in bulk goods and are not interested in buying.</text>
 	<text planet="PLANET_POPULATED">A space mall sells trade goods to ships coming and going from this settlement.</text>
-<text>You spot a civilian trade depot nearby. Passive scans indicate they are storing locally produced goods. They notice your interest and offer a sell. The don't sell ship equipment though...</text>
-	<text>An unprotected trade depot lingers nearby. They reluctantly offer to sell some of their goods. The stations chief seems nervous because of all the firepower your brought here.</text>
+<text>You spot a civilian trade depot nearby. Passive scans indicate they are storing locally produced goods. They notice your interest and offer a deal. The don't sell ship equipment though...</text>
+	<text>An unprotected trade depot lingers nearby. They reluctantly offer to sell some of their goods. The Station Chief seems nervous because of all the firepower your brought here.</text>
 	<text>A civilian trade depot hails: "Federation? Well we don't care, not many militias or Rebels come around here. Just keep your big guns holstered, alright?" They offer to sell some goods.</text>
-	<text>A trade depot is storing and trading goods here. They great you: "OK... we detect a lot of weaponry on your ship. Do we have to call in the militia or do you just want to politely buy some stuff?" They seem to feel threatened.</text>
+	<text>A trade depot is storing and trading goods here. They greet you: "OK... we detect a lot of weaponry on your ship. Do we have to call in the militia or do you just want to politely buy some stuff?" They seem to feel threatened.</text>
 </textList>
 
 
@@ -15178,7 +15178,7 @@ IDEAS
 </eventList>
 
 <textList name="CIVILIAN_TRADE_DEPOT_BUY_TEXT">
-	<text>You transfer the scrap. While your crew loads the cargo. Time passes.</text>
+	<text>You transfer the scrap. While your crew loads the cargo, time passes.</text>
 	<text>You write a scrap transfer order. Processing it takes a while, loading the cargo takes even longer.</text>
 	<text>You hand over the crates with the scrap. Loading the cargo takes it's time, the cargo drones are in much less of a hurry than you.</text>
 	<text>To seal the deal you have to give detailed explanations on your trade license and your (fake) ship registration. Everything is double checked. Why is this taking so long? Then the cargo is finally loaded, slowly.</text>
@@ -15250,7 +15250,7 @@ IDEAS
 
 <eventList name="DESTROYED_PIRACY_CIVILIAN_RESULTS_STATION">
 	<event>
-		<text>This was for the good of the mission, but still can't help feeling like you lost your way. Crew morale is as low as it can get. Scans indicate some of stored cargo is still intact. You order an investigation.</text>
+		<text>This was for the good of the mission, but you still can't help feeling like you lost your way. Crew morale is as low as it can get. Scans indicate some of stored cargo is still intact. You order an investigation.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -15266,7 +15266,7 @@ IDEAS
 		</choice>
 	</event>
 	<event>
-		<text>This was for the good of the mission, but still can't help feeling like you lost your way. Crew morale is as low as it can get. Scans indicate some of stored cargo is still intact. You order an investigation.</text>
+		<text>This was for the good of the mission, but you still can't help feeling like you lost your way. Crew morale is as low as it can get. Scans indicate some of stored cargo is still intact. You order an investigation.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -15364,7 +15364,7 @@ IDEAS
 		</choice>
 	</event>
 	<event>
-		<text>Your crew accuses you of betraying everything the Federation stands for. A salvage team is sent in to strip the station of useful materials and report on its cargo.</text>
+		<text>Your crew accuses you of betraying everything the Federation stands for. A salvage team is sent in to strip the station of useful materials and report on it's cargo.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -15380,7 +15380,7 @@ IDEAS
 		</choice>
 	</event>
 	<event>
-		<text>So many individuals died by your hand during your mission, so the death of this civilians doesn't matter, right? The crew seems to think otherwise. As expected you discover some trade goods in the depots cargo holds.</text>
+		<text>So many individuals died by your hand during your mission, so the death of these civilians doesn't matter, right? The crew seems to think otherwise. As expected you discover some trade goods in the depot's cargo holds.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -15413,7 +15413,7 @@ IDEAS
 
 <eventList name="DEAD_CREW_PIRACY_CIVILIAN_RESULTS_RISKLESS_STATION">
 	<event>
-		<text>Your crew has no problems with resorting to piracy. A salvage team strips the station of useful materials and checks its cargo.</text>
+		<text>Your crew has no problems with resorting to piracy. A salvage team strips the station of useful materials and checks it's cargo.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -15421,7 +15421,7 @@ IDEAS
 		</choice>
 	</event>
 	<event>
-		<text>Your crew has no problems with resorting to piracy. A salvage team is sent in to strip the ship of useful materials and report on its cargo.</text>
+		<text>Your crew has no problems with resorting to piracy. A salvage team is sent in to strip the ship of useful materials and report on it's cargo.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -15429,7 +15429,7 @@ IDEAS
 		</choice>
 	</event>
 	<event>
-		<text>You strip the ship of useful materials. Your crew follows their orders. The salvage team report on some cargo in the stations holds.</text>
+		<text>You strip the ship of useful materials. Your crew follows their orders. The salvage team reports on some cargo in the stations holds.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -15437,11 +15437,11 @@ IDEAS
 		</choice>
 	</event>
 	<event>
-		<text>Your crew agrees this was ugly, but necessary. You are able to take the fuel out of the ships storage. You also take all the scrap you can manage.</text>
+		<text>Your crew agrees this was ugly, but necessary. You are able to take the fuel out of the ship's storage. You also take all the scrap you can manage.</text>
 		<autoReward level="HIGH">fuel</autoReward>
 	</event>
 	<event>
-		<text>Your crew does not question your course of action. You are able to take the fuel out of the ships storage. You also take all the scrap you can manage and request a report on the ship's cargo.</text>
+		<text>Your crew does not question your course of action. You are able to take the fuel out of the ship's storage. You also take all the scrap you can manage and request a report on the ship's cargo.</text>
 		<autoReward level="LOW">fuel</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -15638,10 +15638,10 @@ IDEAS
 </textList>
 
 <textList name="GANG_SHAKEDOWN_TEXT">
-	<text>Since interstellar authority has broken down, pirates, militias and local gangs share control of the coreworlds and keep a relative stable peace. A local banger crew seem to know who you are. They threaten to sell you out to the Rebel fleet and demand some scrap to keep quiet.</text>
+	<text>Since interstellar authority has broken down, pirates, militias and local gangs share control of the core worlds and keep a relative stable peace. A local banger crew seems to know who you are. They threaten to sell you out to the Rebel fleet and demand some scrap to keep quiet.</text>
 	<text>A small gang ship hails you: "This is our beacon. Some say you are a wanted criminal, but you don't look like a cool one. Got some scrap? Else the Rebels might get a little tip on your whereabouts soon, if you get my meaning..." This seems to be some kind of shakedown.</text>
 	<text>A militia ship with gang marking hails: "Federation!? No way! You are that ship everyone is looking for! You better hand over some scrap or we gonna put the fleet on your ass within a standard hour."</text>
-	<text>A ship with the markings of a local gang jumps in shortly after you. They hail: "Hey there, glad we caught up with you. You are this rogue Federation ship, right? The Rebels would pay a lot for some intel on your whereabouts. What's about you make us a better offer first?" They giggle.</text>
+	<text>A ship with the markings of a local gang jumps in shortly after you. They hail: "Hey there, glad we caught up with you. You are that rogue Federation ship, right? The Rebels would pay a lot for some intel on your whereabouts. What's about you make us a better offer first?" They giggle.</text>
 </textList>
 
 <event name="GANG_MANTIS" unique="true">
@@ -15726,11 +15726,11 @@ IDEAS
 
 <eventList name="SE_QUEST_PASSANGERS_RESULTS">
 	<event>
-		<text planet="PLANET_POPULATED">One of the major coreworlds lies in front of you. The passengers, a group of human merchants, take a public shuttle down to the surface. They were quite wealthy and you receive a nice tip for the timely delivery.</text>
+		<text planet="PLANET_POPULATED">One of the major core worlds lies in front of you. The passengers, a group of human merchants, take a public shuttle down to the surface. They were quite wealthy and you receive a nice tip for the timely delivery.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 	</event>
 	<event>
-		<text planet="PLANET_POPULATED">One of the major coreworlds lies in front of you. You land at the cheapest pad you can find but the docking fees still eat up quite a bit of your profit. Your passengers complain about "the state of the ship" as they leave. Coreworlders...</text>
+		<text planet="PLANET_POPULATED">One of the major core worlds lies in front of you. You land at the cheapest pad you can find but the docking fees still eat up quite a bit of your profit. Your passengers complain about "the state of the ship" as they leave. Core worlders...</text>
 		<autoReward level="MED">scrap_only</autoReward>
 	</event>
 	<event>
@@ -15744,7 +15744,7 @@ IDEAS
 		<choice>
 			<text>Buy a small heard of fine cattle.</text>
 			<event>
-				<text>Sealing the documentation and driving the livestock into the cargo holds takes its time. You hope the animals survive all the usual breaches, fires, boarding crews and missile impacts...</text>
+				<text>Sealing the documentation and driving the livestock into the cargo holds takes it's time. You hope the animals survive all the usual breaches, fires, boarding crews and missile impacts...</text>
 				<modifyPursuit amount="1"/>
 				<item_modify>
 					<item type="scrap" min="-18" max="-14"/>
@@ -15836,7 +15836,7 @@ IDEAS
 		</choice>
 	</event>
 	<event>
-		<text planet="PLANET_POPULATED_SMALL">One of the secondary coreworlds lies in front of you. The passengers, a group of civilians, take a public shuttle down to the surface. As you count your scrap, a video massage comes in.</text>
+		<text planet="PLANET_POPULATED_SMALL">One of the secondary core worlds lies in front of you. The passengers, a group of civilians, take a public shuttle down to the surface. As you count your scrap, a video massage comes in.</text>
 		<autoReward level="MED">scrap_only</autoReward>
 		<choice>
 			<text>Continue...</text>
@@ -15921,7 +15921,7 @@ IDEAS
 </event>
 <eventList name="CIVILIAN_DISTRESS_RIOT_DISCUSS">
 	<event>
-		<text>You set the ship down near a busy protest camp. The activists declare they have no leaders, but everyone is happy to discuss with you. The hope for a better live with the Rebellion. You and the crew share some stories from your journey.</text>
+		<text>You set the ship down near a busy protest camp. The activists declare they have no leaders, but everyone is happy to discuss with you. The hope for a better life with the Rebellion. You and the crew share some stories from your journey.</text>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
@@ -15931,7 +15931,7 @@ IDEAS
 		</choice>
 	</event>
 	<event>
-		<text>The protests have developed into a full out riot. The administration building as being set ablaze and militia marines are deployed to control the crowds. As you watch the chaos from a bar near the landing pad you realize that there nothing you can do here. You are just a bystander, a crisis tourist.</text>
+		<text>The protests have developed into a full out riot. The administration building as being set ablaze and militia marines are deployed to control the crowds. As you watch the chaos from a bar near the landing pad you realize that there's nothing you can do here. You are just a bystander, a crisis tourist.</text>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
@@ -15944,7 +15944,7 @@ IDEAS
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text>As you take off you spot a group of armed individuals on a nearby roof. They have an RPG 7000! You put full power to the thrusters, but can not evade the rocket. Luckily, spaceship hull armour can take such a hit easily.</text>
+				<text>As you take off you spot a group of armed individuals on a nearby roof. They have an RPG 7000! You put full power to the thrusters, but cannot evade the rocket. Luckily, spaceship hull armour can take such a hit easily.</text>
 			<damage amount="2"/>
 			</event>
 		</choice>
@@ -15952,7 +15952,7 @@ IDEAS
 </eventList>
 
 <event name="CIVILIAN_RELAX" unique="true">
-	<text planet="PLANET_POPULATED">You arrive at one of the major coreworld planets. Many settlements have several million inhabitants. Your crew is exhausted and traumatized from the journey, the endless work and all the fighting. They politely ask for a shore leave.</text>
+	<text planet="PLANET_POPULATED">You arrive at one of the major core world planets. Many settlements have several million inhabitants. Your crew is exhausted and traumatized from the journey, the endless work and all the fighting. They politely ask for a shore leave.</text>
 	<choice hidden="true">
 		<text>Spend one jump cycle on the planet to have fun.</text>
 		<event load="CIVILIAN_RELAX_RESULTS"/>
@@ -15983,12 +15983,12 @@ IDEAS
 		</choice>
 	</event>
 	<event>
-		<text>You stay on board the ship to plan your further journey. As your crew returns, one of your crew men brings a guest. It turns out they have become lovers and the unknown individual even wants to join your cause in order to be able to stay with your crew member.</text>
+		<text>You stay on board the ship to further plan your journey. As your crew returns, one of your crewmen brings a guest. It turns out they have become lovers and the unknown individual even wants to join your cause in order to be able to stay with your crew member.</text>
 		<modifyPursuit amount="1"/>
 		<choice hidden="true">
 			<text>"Whatever. Welcome on board."</text>
 			<event>
-				<text>You have a quick speech about crew discipline, the dangers of your mission and that everyone will be treated the same on board. Your crew members partner is still eager to join. Can love bloom in outer space? Perhaps soon you will find out.</text>
+				<text>You have a quick speech about crew discipline, the dangers of your mission and that everyone will be treated the same on board. Your crewman's partner is still eager to join. Can love bloom in outer space? Perhaps soon you will find out.</text>
 			<crewMember amount="1"/>
 			</event>
 		</choice>
@@ -16014,7 +16014,7 @@ IDEAS
 	<choice req="ENERGY_SHIELD" hidden="true">
 		<text>(Zoltan Shield) Reconfigure the shield frequencies to scramble the enemy artillery targeting.</text>
 	<event>
-		<text>Your advanced shield technlogy prevents the hostile artillery weapons from locking on to your vessel. The spotter ship will get no support fire.</text>
+		<text>Your advanced shield technology prevents the hostile artillery weapons from locking on to your vessel. The spotter ship will get no support fire.</text>
 		<ship load="CE_SPOTTER_CIV_BEAM_SUPERSHIELD" hostile="true"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
@@ -16074,13 +16074,13 @@ IDEAS
 	</choice>
 </event>
 <textList name="CE_PDS_CIV_TEXT">
-	<text planet="NONE" back="BG_WARNING_TARGETING_CIV">Another buisy core planet lies in front of you. The planetary goverment has outsourced it's defense sector to private contractors. Seems these are more than on firendly terms with the Rebels.</text>
-	<text planet="NONE" back="BG_WARNING_TARGETING_CIV">After jump compleation the dock control of this densly populated planet hails you. "The Rebel fleet has put a price on your head. You are a wanted criminal. We will bring you in, alive or dead". Seems you won't make many friends here.</text>
+	<text planet="NONE" back="BG_WARNING_TARGETING_CIV">Another busy core planet lies in front of you. The planetary government has outsourced it's defense sector to private contractors. Seems they are on more than friendly terms with the Rebels.</text>
+	<text planet="NONE" back="BG_WARNING_TARGETING_CIV">After jump completion the dock control of this densely populated planet hails you: "The Rebel fleet has put a price on your head. You are a wanted criminal. We will bring you in, alive or dead". Seems you won't make many friends here.</text>
 </textList>
 
 <eventList name="CE_PDS_CIV_LIST">
 	<event>
-		<text>A small ship is send after you to spott for the planetary beam artillery. This might get nasty.</text>
+		<text>A small ship is sent after you to spot for the planetary beam artillery. This might get nasty.</text>
 		<ship load="CE_SPOTTER_CIV_BEAM" hostile="true"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>(Internal Effector) Prepare for offensive cyber attack. Effectorize the hostile!</text> 
