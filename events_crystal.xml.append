@@ -31,7 +31,7 @@
 	<choice req="AE_BEACON_KIT" hidden="true">
 		<text>(Beacon Access Kit) Cover your tracks in the FTL network to delay the Rebel fleet.</text>
 		<event>
-			<text>The FTL network here seeme to work as you know it, but the jump beacons are of a design you never have seen before. Their crystal shape hints nothing of their function, they could just as well be fancy asteroids. The Access Kit is useles here.</text>
+			<text>The FTL network here seem to work as you know it, but the jump beacons are of a design you never have seen before. Their crystal shape hints nothing of their function, they could just as well be fancy asteroids. The Access Kit is useless here.</text>
 		</event>
 	</choice>
 	<choice req="WEAPONS_MINES" hidden="true"> 
@@ -217,7 +217,7 @@
 </event>
 	
 <event name="CRYSTAL_REBEL" unique="false">
-	<text>As soon as you arrive, a Rebel ship jumps in after you; they must be really hot on your tail.</text>
+	<text>As soon as you arrive, a Rebel ship jumps in after you; they must be really hot on your tail!</text>
 	<ship load="REBEL" hostile="true"/>
 		<choice req="AE_ADV_EFFECTOR" hidden="true"> 
 			<text>[Targeting Jammer] Prepare for offensive cyber attack. Effectorize the hostile!</text> 
@@ -519,7 +519,7 @@
 </event>
 <!-- Justin - TO DO - make a separate list? -->
 <event name="CRYSTAL_PIRATE_CRYSTAL" unique="false">
-	<text>A pirate ship jumps in right after you arrive at the beacon. It must have followed once the Long-Range Beacon was reactivated. It almost charges a small Crystalline transport ship, weapons armed.</text>
+	<text>A pirate ship jumps in right after you arrive at the beacon. It must have followed once the Long-Range Beacon was reactivated. It almost charges into a small Crystalline transport ship, weapons armed.</text>
 	<choice hidden="true">
 		<text>Attack the pirate.</text>
 		<event>
@@ -797,7 +797,7 @@
 	<choice hidden="true">
 		<text>Leave them be.</text>
 		<event>
-			<text>You send them a friendly warning regarding the armada of Rebel ships pursuing you, and then get underway lest they catch you up.</text>
+			<text>You send them a friendly warning regarding the armada of Rebel ships pursuing you, and then get under way lest they catch up to you.</text>
 		</event>
 	</choice>
 </event>
@@ -925,7 +925,7 @@
 		<autoReward level="RANDOM">stuff</autoReward>
 	</event>
 	<event>
-		<text>"Wow, thanks! Perhaps we can fix up a bit of your hull for sating my curiosity. We're pretty handy with repairs."</text>
+		<text>"Wow, thanks! Perhaps we can fix up a bit of your hull for indulging my curiosity. We're pretty handy with repairs."</text>
 		<damage amount="-6"/>
 	</event>
 </eventList>
@@ -1225,7 +1225,7 @@
 	<choice req="AE_TELEPORTER_JAMMER" hidden="true">
 		<text>(Teleporter Disruptor) Get the field up, in case this things can teleport.</text>
 		<event>
-			<text>You indeed detect something that could be teleporter targeting. The crew recomends to get out of here before they call in their war ships.</text>
+			<text>You indeed detect something that could be teleporter targeting. The crew recommends to get out of here before they call in their war ships.</text>
 		</event>
 	</choice>
 	<choice>
@@ -1237,7 +1237,7 @@
 	</choice>
 </event>
 <textList name="BOARDERS_CRYSTAL">
-	<text>You detect a heavily armed Crystalline ship escorting some sort of prison vessel. Scans indicate there are a number of non-Crystal based life forms aboard; they must be rounding up all of the intruders in their space! Before you can react, you hear the anoying sound of your ships teleporter-warning.</text>
+	<text>You detect a heavily armed Crystalline ship escorting some sort of prison vessel. Scans indicate there are a number of non-Crystal based life forms aboard; they must be rounding up all of the intruders in their space! Before you can react, you hear the annoying sound of your ship's teleporter-warning.</text>
 	<text>You arrive near a small settlement and a lone guard ship moves to intercept you. You try to contact them but they are refusing all hails.</text>
 	<text>You pick up chatter from a nearby ship, "Yes... Here are some interesting specimens. Try to take them alive this time, there's a lot of money to be had on aliens." Scanners indicate a remote teleporter is powering up.</text>
 </textList>
@@ -1263,7 +1263,7 @@
 	<text>The final shots chip away at the hull of the crystalline vessel, causing it to shatter into thousands of pieces, usable scrap and metalwork intertwined with the debris.</text>
 	<text>The crystalline ship submits to the force of the attack and breaks apart into crystal shards and assorted scrap materials.</text>
 	<text>The crystalline beings inside their ship soon become one with space as their vessel breaks apart around them, the components within soon entering your cargo holds.</text>
-	<text>The shiny blue ship before you submits to the barrage from your arsenal and shatters into gibs, the inner workings ripe for the picking.</text>
+	<text>The shiny blue ship before you submits to the barrage from your arsenal and shatters into bits, the inner workings ripe for the picking.</text>
 </textList>
 
 
@@ -1517,11 +1517,11 @@
 </eventList>
 
 <textList name="STORE_CRYSTAL_BUY_TEXT">
-	<text>You transfer the scrap. You are not sure if you just bough priceless art or simply cheap crap. No one knows what purpose this artifacts serve... While your crew loads the cargo you have a look at the ship equipment the shop also also offers. Time passes.</text>
-	<text>You agree to transfer the scrap, but making the deal still takes a while. Loading the cargo takes even longer. You check the ship equipment catalog while waiting. Luckily, you have the universal translator.</text>
+	<text>You transfer the scrap. You are not sure if you just bough priceless art or simply cheap crap. No one knows what purpose these artifacts serve... While your crew loads the cargo you have a look at the ship equipment the shop also offers. Time passes.</text>
+	<text>You agree to transfer the scrap, but making the deal still takes a while. Loading the cargo takes even longer. You check the ship equipment catalogue while waiting. Luckily, you have the universal translator.</text>
 </textList>
 <textList name="STORE_CRYSTAL_SELL_TEXT">
-	<text>These beings never traded with an outsider in their whole life and think seems to think it is great fun. They don't care about the price at all, but haggle as some kind of game or exotic performance. [Reminder: Not selling off the goods at the shop breaks the trade system and means you are cheating.]</text>
+	<text>These beings have never traded with an outsider in their whole life and seems to think it is great fun. They don't care about the price at all, but haggle as some kind of game or exotic performance. [Reminder: Not selling off the goods at the shop breaks the trade system and means you are cheating.]</text>
 </textList>
 
 
